@@ -1,0 +1,212 @@
+@charset "utf-8";
+/* CSS Document */
+.lof-slider_1 .lof-wrapper {position:relative;}
+.lof-slider_1 .preload {background:#FFF; position:absolute; z-index:5; top:0; left:0;}
+.lof-slider_1 .preload div {background:transparent url('../images/load-indicator.gif') no-repeat scroll 50% 50%;}
+.lof-slider_1 .lof-main-outer {position:relative; overflow:hidden;}
+
+/* main flash */
+.lof-slider_1 .lof-main-wapper {
+	padding:0;
+	margin:0;
+	position:absolute;
+}
+.lof-slider_1 .lof-main-wapper .lof-item {
+	padding:0;
+	margin:0;
+	float:left;
+	position:relative;
+	overflow:hidden;  
+}
+.lof-slider_1 .lof-opacity  .lof-item {
+	top:0;
+	left:0;
+	float:inherit;
+	position:absolute;
+}
+.lof-slider_1 .lof-main-wapper .lof-item img {
+	padding:0;
+  margin:0;
+  border:none;	
+}
+
+/* description */
+.lof-slider_1 .lof-description {position:absolute; padding:10px;}
+.lof-slider_1 .lof-description p {margin:0;	padding:0}
+.lof-slider_1 .lof-description_black {background:url('../images/bg_trans.png');}
+.lof-slider_1 .lof-description_white {background:url('../images/transparent_bg_white.png');}
+.lof-slider_1 .lof-description_nobg {background:none;}
+.lof-slider_1 .lof-description_black, .lof-slider_1 .lof-description_black a, .lof-slider_1 .lof-description_black a:visited {color:#FFF; text-decoration:none;}
+.lof-slider_1 .lof-description_white, .lof-slider_1 .lof-description_white a, .lof-slider_1 .lof-description_white a:visited {color:#000; text-decoration:none;}
+.lof-slider_1 .lof-description_nobg, .lof-slider_1 .lof-description_nobg a, .lof-slider_1 .lof-description_nobg a:visited {color:#000; text-decoration:none;}
+.lof-slider_1 .lof-description_black a:hover, .lof-slider_1 .lof-description_white a:hover, .lof-slider_1 .lof-description_nobg a:hover {color:red; text-decoration:none;}
+.lof-slider_1 .lof-description_black h3, .lof-slider_1 .lof-description_white h3, .lof-slider_1 .lof-description_nobg h3 {margin:0px;padding:10px 0 5px 0; }
+.lof-slider_1 .lof-description_black h3, .lof-slider_1 .lof-description_black h3 a, .lof-slider_1 .lof-description_black h3 a:visited {color:#DDD; text-decoration:none;}
+.lof-slider_1 .lof-description_white h3, .lof-slider_1 .lof-description_white h3 a, .lof-slider_1 .lof-description_white h3 a:visited {color:#444; text-decoration:none;}
+.lof-slider_1 .lof-description_nobg h3, .lof-slider_1 .lof-description_nobg h3 a, .lof-slider_1 .lof-description_nobg h3 a:visited {color:#444; text-decoration:none;}
+.lof-slider_1 .lof-description_black h3 a:hover, .lof-slider_1 .lof-description_white h3 a:hover, .lof-slider_1 .lof-description_nobg h3 a:hover {color:red; text-decoration:none;}
+
+/* CSS3 Style */
+.lof-slider_1 .lof-css3 {	
+  -moz-box-shadow:0 0 10px #333; 
+  -webkit-box-shadow:0 0 10px #333; 
+  box-shadow: 0 0 10px #333;
+/*overflow:hidden;*/ 
+}
+.lof-slider_1 .lof-css3 .lof-navigator-wapper {
+	-moz-box-shadow:0 0 8px #CCC;
+	-webkit-box-shadow:0 0 8px #CCC;
+  box-shadow: 0 0 8px #333;
+}
+.lof-slider_1 .lof-css3 .lof-description, .lof-slider_1 .lof-css3 .lof-description_black, .lof-slider_1 .lof-css3 .lof-description_white {
+	-moz-box-shadow:0 0 3px #333;
+	-webkit-box-shadow:0 0 3px #333;
+  box-shadow: 0 0 3px #333;
+}
+
+/* ICONS etc. */
+.lof-slider_1 .author_icon {
+  background: url('../icons/icon_author.png') 0 0 no-repeat;
+  font-size: 80%;
+  padding:0 0 0 20px;
+  margin:0 10px 0 0;
+  line-height:4em;
+}
+.lof-slider_1 .date_icon {
+  background: url('../icons/icon_calendar.png') 0 0 no-repeat;
+  font-size: 80%;
+  padding:0 0 0 20px;
+  margin:0 10px 0 0;
+  line-height:4em;
+}
+.lof-slider_1 .category_icon {
+  background: url('../icons/icon_category.png') 0 0 no-repeat;
+  font-size: 80%;
+  padding:0 0 0 22px;
+  margin:0 10px 0 0;
+  line-height:4em;
+}
+.lof-slider_1 .author, .lof-slider_1 .category, .lof-slider_1 .date {margin:0 7px 0 0;  font-size: 80%;}
+
+/*******************************************************/
+
+/* item navigator */
+.lof-slider_1 .lof-horizontal {position:absolute; bottom:10px; right:10px; padding:5px 0;}
+.lof-slider_1 .lof-navigator-wapper {z-index:4;}
+.lof-slider_1 .lof-navigator-wapper_black {background:url('../images/bg_trans.png');}
+.lof-slider_1 .lof-navigator-wapper_white {background:url('../images/transparent_bg_white.png');}
+.lof-slider_1 .lof-navigator-wapper_nobg {background:transparent;}
+.lof-slider_1 .lof-navigator-outer {
+	position:relative;
+	overflow:hidden;
+	float:left
+}
+.lof-slider_1 .lof-navigator {
+	top:0;
+	padding:0;
+	margin:0;
+	position:absolute;
+}
+.lof-slider_1 .lof-navigator li {
+	cursor:pointer;
+	list-style:none;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	float:left;
+	display:block;
+	text-align:center;
+}
+.lof-slider_1 .lof-navigator li img {border:#666 solid 3px;}
+.lof-slider_1 .lof-navigator li.active img, .lof-slider_1 .lof-navigator li:hover img {border:#A8A8A8 solid 3px;}
+.lof-slider_1 .lof-navigator-wapper .lof-next, .lof-slider_1 .lof-navigator-wapper .lof-previous {display:block; cursor:pointer;}
+.lof-slider_1 .lof-navigator-wapper .lof-next {float:left; text-indent:-9999px; margin-right:5px; background:url('../images/arrow-r.png') no-repeat right center;}
+.lof-slider_1 .lof-navigator-wapper .lof-previous {float:left; text-indent:-9999px; margin-left:5px; background:url('../images/arrow-l.png') no-repeat left center;}
+
+/* vertical navigation */
+.lof-slider_1 .lof-vertical {position:absolute; bottom:10px; right:10px;}
+.lof-vertical .lof-navigator-outer {clear: both; float: none !important;}
+.lof-slider_1 .lof-vertical .lof-next {
+  background: url('../images/arrow-d.png') no-repeat scroll center center transparent;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  height: 1px;
+}
+.lof-slider_1 .lof-vertical .lof-previous {
+  background: url('../images/arrow-u.png') no-repeat scroll center center transparent;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  height: 0;
+}
+
+
+/* navigation control */
+.lof-slider_1 .navigationControl {
+margin:10px 0 0 0;
+overflow: hidden;
+}
+.lof-slider_1 .pagSelector {
+  cursor: pointer;
+  background: url('../images/dots.png') no-repeat scroll 0 0 transparent;
+  border: 0 none;
+  display: block;
+  height: 12px;
+  margin-right: 6px;
+  float: left;
+  text-indent: -9999px;   
+  width: 12px;
+}
+.lof-slider_1 .pagSelector.active {
+  background-position: -12px 0;
+}
+
+
+.lof-slider_1 .button-control {
+    cursor: pointer;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    z-index:1000;
+}
+
+.lof-slider_1 .button-control span {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.lof-slider_1 .action-start span {
+  background: transparent url('../images/play.png') scroll no-repeat center center;      
+} 
+.lof-slider_1 .action-stop span {
+ background: transparent url('../images/pause.png') scroll no-repeat center center;    
+}
+.lof-slider_1 .progressbar {
+  background: red;
+  height: 2px;
+  width: 0%;
+  opacity: 0;
+}
+
+.lof-slider_1 .video-overlay{
+  position: absolute;
+    top:0;
+    left:0;
+    background: url('../images/play_video.png') center center no-repeat;
+    opacity:0.4;
+    filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+.lof-slider_1 .video-overlay:hover{
+  background: url('../images/play_video_on.png') center center no-repeat;
+}
+
+.lof-slider_1 .pagSelectorTitle {
+border-bottom: 1px solid silver;
+padding-left:10px;
+}
+.lof-slider_1 .pagSelectorTitle.active {
+background-color: silver;
+}

@@ -1,0 +1,138 @@
+# customSubcategory=jquery=LLL:EXT:t3s_jslidernews/locallang.xml:jquery;
+
+# cat=java_script/jquery/010; type=boolean; label=Include jQuery: This will including the jQuery library. You can use your own inclusion method or T3 jQuery instead.
+includeJquery = 1
+
+# cat=java_script/jquery/020; type=small; label=jQuery Version: Version of the jQuery library (e.g. 1.6.4). Current Version if empty.
+jVersion = 
+
+# cat=java_script/jquery/030; type=boolean; label=Include jQuery easing: This will include the jQuery easing plugin. You can use your own inclusion method or T3 jQuery instead.
+includeJqueryEasing = 1
+
+# cat=java_script/jquery/040; type=boolean; label=jQuery No Conflict Mode: If you are using jQuery with other JS-libraries.
+jqueryNoConflict = 0
+
+# cat=java_script/jquery/050; type=boolean; label=Move Js From Footer To Header: 
+moveJsFromFooterToHeader = 1
+
+# cat=java_script/jquery/060; type=boolean; label=Move InlineJs From Footer To Header: 
+moveInlineJsFromFooterToHeader = 0
+
+# cat=java_script/jquery/070; type=boolean; label=Include inlineJS: This will include the inline JavaScript. You can use your own ... include by TS.
+includeInlineJS = 1
+
+
+# customSubcategory=text=LLL:EXT:t3s_jslidernews/locallang.xml:text;
+
+# cat=div_settings/text/010; type=boolean; label=Text from rgnewsce: If no image is available in the news-record and you use the EXT rgnewsce, the image from the first CE is used by default. If you activate this, you get also the text (header and bodytext) from this CE.
+rgnewsceText = 0
+
+# cat=div_settings/text/020; type=options[rteCssText=0,TS_links_rte=1]; label=RTE text field rendering: Select your prefered method to render RTE-fields. 
+rteRendering = 0
+
+# cat=div_settings/text/030; type=boolean; label=Use cropHTML on bodytext: Enable this option to strip_tags and crop the bodytext.
+crop = 1
+
+# cat=div_settings/text/040; type=boolean; label=Disable utf8_encode: The EXT test on the renderCharset configuration of the site and utf8_encode the date automatically. Select this option to disable the test on the renderCharset configuration.
+disableUtf8Encode = 0
+
+# cat=div_settings/text/050; type=options[none=0,Title/Header=1,Bodytext=2]; label=Hide Description: Hide the Description if the Title/Header or Bodytext is empty (Don't work with Nivo Slider). 
+hideDescription = 0
+
+# cat=div_settings/text/060; type=boolean; label=Hide Video Description: Hide the Description for CType=media (Don't work with Nivo Slider). 
+hideVideoDescription = 0
+
+# cat=div_settings/text/070; type=boolean; label=Readmore Link: Enable, if you like to see a readmore-link with internal- and external links from tt_news records. 
+readmoreInternal = 0
+
+
+# customSubcategory=link=LLL:EXT:t3s_jslidernews/locallang.xml:link;
+
+# cat=div_settings/link/010; type=boolean; label=Use Header-Link: If you are using the slider with tt_content and a header-link in the CE, the slider will use this link if you select this option.
+useHeaderLink = 0
+
+# cat=div_settings/link/020; type=boolean; label=Link to section: If enabled the link has an anchor to the CE (only if using tt_content with the slider).
+sectionlink = 1
+
+
+# customSubcategory=video-image=LLL:EXT:t3s_jslidernews/locallang.xml:video-image;
+# cat=div_settings/video-image/010; type=text; label=Default Video Images: List of default images if the CType="media" (i.g. fileadmin/images/video_01.png, fileadmin/images/video_02.png ...).
+videoImages = 
+
+# customSubcategory=tt-news=LLL:EXT:t3s_jslidernews/locallang.xml:tt-news;
+# cat=div_settings/tt-news/010; type=options[0 levels=0,1 level=1,2 levels=2,3 levels=3,4 levels=4]; label=Recursive pid_list: Select the recursive level of the pid-List.
+recLevel = 0
+
+
+# customSubcategory=dim=LLL:EXT:t3s_jslidernews/locallang.xml:dim;
+
+# cat=dimensions/dim/010; type=int+; label=Manual Slider Height: Manual height for the slider in px (only for slider-style 2,3 and 6).
+manualSliderHeight = 0
+
+# cat=dimensions/dim/020; type=int+; label=Manual Image Width: Manual width for the images in px.
+manualImageWidth = 0
+
+
+# cat=dimensions/dim/030; type=int+; label=Manual Image Height: Manual height for the images in px.
+manualImageHeight = 0
+
+# cat=dimensions/dim/040; type=options[crop,maximum,scale]; label=Image resize: crop, maximum, scale  
+imageResize = crop
+
+# cat=dimensions/dim/050; type=options[crop,maximum,scale]; label=Thumbnail resize: crop, maximum, scale  
+thumbResize = crop
+
+
+# customSubcategory=overlay=LLL:EXT:t3s_jslidernews/locallang.xml:overlay;
+
+# cat=colorbox_overlay/overlay/010; type=boolean; label=Include Colorbox JS: This will include the jQuery Colorbox plugin. You need colorbox to open videos, tt_content and/or tt_news items in colorbox within the slider. You can use your own inclusion method instead.
+includeColorboxJS = 0
+
+# cat=colorbox_overlay/overlay/020; type=boolean; label=Include colorbox CSS: This will include the CSS-file for the jQuery Colorbox plugin. You can use your own inclusion method instead.
+includeColorboxCSS = 0
+
+# cat=colorbox_overlay/overlay/030; type=boolean; label=Overlay Selected: For tt_content and tt_news with rgnewsce. If enabled you will find a new section-frame (84) "Content overlay" in your CEs. Don't work with "Default links".  
+overlaySelected = 0
+
+# cat=colorbox_overlay/overlay/040; type=small; label=Overlay width: Set a fixed total width. This includes borders and buttons. Example: "100%", "500px", or 500 (default:50%). 
+overlayWidth = 50%
+
+
+# cat=colorbox_overlay/overlay/041; type=options[elastic,fade,none]; label=Elastic: The transition type. Can be set to "elastic", "fade", or "none". (default:elastic). 
+transition = elastic
+
+# cat=colorbox_overlay/overlay/042; type=int+; label=Speed: Sets the speed of the fade and elastic transitions, in milliseconds. (default:350). 
+speed = 350
+
+# cat=colorbox_overlay/overlay/043; type=int[0-100]; label=Opacity: The overlay opacity level. (default:85 for 0.85). 
+opacity = 85
+
+# cat=colorbox_overlay/overlay/044; type=boolean; label=Current: Text or HTML for the group counter while viewing a group. 
+current = 1
+
+
+# customSubcategory=video=Video;
+# cat=colorbox_overlay/video/050; type=boolean; label=Play Button: Play Button for CType="media".  
+overlayPlayButton = 0
+
+
+# cat=colorbox_overlay/video/060; type=int+; label=Video width: Inner width for video overlay (default:640).  
+overlayInnerWidth = 640
+
+# cat=colorbox_overlay/video/070; type=int+; label=Video height: Inner height for video overlay (default:390). 
+overlayInnerHeight = 390
+
+
+# customSubcategory=marker=LLL:EXT:t3s_jslidernews/locallang.xml:marker
+
+# cat=marker/marker/010; type=text; label=Use own Marker_1: You can use your own Marker ###OWN_MARKER_ONE### in the HTML-Templates - specify db-field from the table tt_news, tt_content or pages here (NEW - with a table prefix e.g. tt_news.DBfield ):
+ownMarker_1 =
+
+# cat=marker/marker/020; type=text; label=Use own Marker_2: You can use your own Marker ###OWN_MARKER_TWO### in the HTML-Templates - specify db-field from the table tt_news, tt_content or pages here (NEW - with a table prefix e.g. tt_news.DBfield ):
+ownMarker_2 =
+
+
+TSConstantEditor.dimensions {
+  header = Dimensions Info:
+  description = <strong>You can use the following TS:</strong> //plugin.tx_t3sjslidernews_pi1 { //image { //file.width = 180m //file.height = 180m //wrap = | //} //}
+}

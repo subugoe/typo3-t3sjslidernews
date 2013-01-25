@@ -1,0 +1,372 @@
+<html>
+<head>
+<title>pi1 plugin template file for t3s_jslidernews</title>
+</head>
+<body>
+
+<h1>HTML-Template for contentStyle tt_content</h1>
+<pre>
+<strong>Common markers:</strong>
+NUMBER - the number of the content item (start with 1) 
+IMAGE - content item image or default image
+THUMBNAIL - content item thumbnail or default thumbnail
+TITLE - content item header
+TITLELINK - link content item header to the page with the content item
+SUBTITLE - content item subheader 
+DATE - date and/or time in content item
+TEXT -  show the bodytext (if any)
+READMORE - link a text (read more) to the page with the content item
+PAGINATION
+<br />
+<br />
+<strong>Own markers:</strong>
+OWN_MARKER_ONE - specify in the EXT-Manager
+OWN_MARKER_TWO - specify in the EXT-Manager
+<br />
+<br />
+<strong>DAM markers (if using dam):</strong>
+DAM_TITLE - title from the dam-record 
+DAM_DESCRIPTION - description from the dam-record 
+DAM_CAPTION - caption from the dam-record 
+DAM_ABSTRACT - abstract from the dam-record 
+DAM_CREATOR - creator from the dam-record 
+DAM_PUBLISHER - publisher from the dam-record 
+DAM_COPYRIGHT - copyright from the dam-record 
+</pre>
+<br />                                                      
+<br />
+<h2>Slider Style 1</h2>
+<br />
+<!-- ###SLIDERSTYLE_1### begin -->
+<div id="lofslidecontent###CEID###" class="lof-slider_1" style="height:###SLIDERHEIGHT###px; width:###SLIDERWIDTH###px">
+  <div class="lof-wrapper ###CSS3###" style="width:###SLIDERWIDTH###px; height:###SLIDERHEIGHT###px;">
+ 	<div class="preload" ><div style="width:###IMAGEWIDTH###px; height:###IMAGEHEIGHT###px;">&nbsp;</div></div>
+  <div class="lof-main-outer" style="width:###IMAGEWIDTH###px; height:###IMAGEHEIGHT###px;">
+  	<div class="lof-main-wapper">
+	  <!-- ###SLIDER### begin -->
+   		<div class="lof-item">
+        ###IMAGE###           
+        <div class="lof-description ###DESCRIPTION-BG###" style="###DESCRIPTION-STYLE###">
+          <h3 class="lof-title" style="###HEADER-STYLE###">###TITLELINK###</h3>
+          ###SUBTITLE###
+          ###TEXT###  ###READMORE###      
+        </div>   
+      </div> 
+ 	  <!-- ###SLIDER### end -->
+  </div>
+  </div>
+  <div class="lof-navigator-wapper ###NAVIGATOR-BG### ###NAV-POSITION###">
+    <div onclick="return false" class="lof-previous" style="###ARROW-STYLE###">Previous</div>
+      <div class="lof-navigator-outer">
+        <ul class="lof-navigator">
+	    <!-- ###NAVIGATION### begin -->
+          <li class="navSelector">###THUMBNAIL###</li>
+ 	    <!-- ###NAVIGATION### end -->
+        </ul>
+      </div>
+    <div onclick="return false" class="lof-next" style="###ARROW-STYLE###">Next</div>  		
+  </div>
+  ###PAUSEBUTTON###
+  ###PROGRESSBAR###  
+  </div>
+  ###PAGINATION###
+</div>  
+###INLINE_OVERLAY###
+<!-- ###SLIDERSTYLE_1### end -->
+<br />
+<br />
+<h2>Slider Style 2</h2>
+<br />
+<!-- ###SLIDERSTYLE_2### begin -->
+<div id="lofslidecontent###CEID###" class="lof-slider_2" style="width:###SLIDERWIDTH###px; height:###SLIDERHEIGHT###px;">
+<div class="lof-wrapper ###CSS3###" style="width:###SLIDERWIDTH###px; height:###SLIDERHEIGHT###px;">
+  <div class="preload" style="width:###IMAGEWIDTH###px; height:###IMAGEHEIGHT###px;"><div style="width:###IMAGEWIDTH###px; height:###IMAGEHEIGHT###px;">&nbsp;</div></div>
+  <div class="lof-main-outer" style="width:###IMAGEWIDTH###px; height:###IMAGEHEIGHT###px;">
+  	<div class="lof-main-wapper">
+	  <!-- ###SLIDER### begin -->
+   		<div class="lof-item">
+        ###IMAGE###           
+        <div class="lof-description ###DESCRIPTION-BG###" style="###DESCRIPTION-STYLE###">
+          <h3 class="lof-title" style="###HEADER-STYLE###">###TITLELINK###</h3>
+          ###TEXT###  ###READMORE###    
+        </div>   
+      </div> 
+ 	  <!-- ###SLIDER### end -->
+    </div>  	
+  </div>
+  <div class="lof-navigator-outer">
+    <ul class="lof-navigator ###ACTNAVCOLOR###">
+    <!-- ###NAVIGATION### begin -->
+      <li class="navSelector">
+       	<div style="###NAVSELECTOR-STYLE###">
+          ###THUMBNAIL###
+          <h3 style="###HEADER-STYLE###">###TITLE###</h3>
+        </div>    
+      </li>
+    <!-- ###NAVIGATION### end -->
+    </ul>
+  </div>
+  ###PAUSEBUTTON###
+  ###PROGRESSBAR###
+</div>
+###PAGINATION###
+</div>
+###INLINE_OVERLAY###
+<!-- ###SLIDERSTYLE_2### end -->
+<br />
+<br />
+<h2>Slider Style 3</h2>
+<br />
+<!-- ###SLIDERSTYLE_3### begin -->
+<div id="lofslidecontent###CEID###" class="lof-slider_3 lof-snleft" style="width:###SLIDERWIDTH###px; height:###SLIDERHEIGHT###px;">
+<div class="lof-wrapper ###CSS3###" style="width:###SLIDERWIDTH###px; height:###SLIDERHEIGHT###px;">
+  <div class="preload" style="width:###IMAGEWIDTH###px; height:###IMAGEHEIGHT###px;"><div style="width:###IMAGEWIDTH###px; height:###IMAGEHEIGHT###px;">&nbsp;</div></div>
+  <div class="lof-main-outer" style="width:###IMAGEWIDTH###px; height:###IMAGEHEIGHT###px; margin-left:###IMAGEMARGIN###px">
+  	<div class="lof-main-wapper" >
+	  <!-- ###SLIDER### begin -->
+      <div class="lof-item">
+        ###IMAGE###           
+        <div class="lof-description ###DESCRIPTION-BG###" style="###DESCRIPTION-STYLE###">
+          <h3 class="lof-title" style="###HEADER-STYLE###">###TITLELINK###</h3>
+          ###TEXT###  ###READMORE###
+        </div>
+      </div>       
+ 	  <!-- ###SLIDER### end -->
+    </div>  	
+  </div>
+  <div class="lof-navigator-outer">
+    <ul class="lof-navigator ###ACTNAVCOLOR###">
+    <!-- ###NAVIGATION### begin -->
+      <li class="navSelector">
+       	<div style="###NAVSELECTOR-STYLE###">
+          ###THUMBNAIL###
+          <h3 style="###HEADER-STYLE###">###TITLE###</h3>
+        </div>    
+      </li>
+    <!-- ###NAVIGATION### end -->
+    </ul>
+  </div>
+  ###PAUSEBUTTON###
+  ###PROGRESSBAR###
+</div>
+###PAGINATION###
+</div>
+###INLINE_OVERLAY###
+<!-- ###SLIDERSTYLE_3### end -->
+<br />
+<br />
+<h2>Slider Style 4</h2>
+<br />
+<!-- ###SLIDERSTYLE_4### begin -->
+<div id="lofslidecontent###CEID###" class="lof-slider_4" style="height:###SLIDERHEIGHT###px; width:###SLIDERWIDTH###px">
+  <div class="lof-wrapper ###CSS3###" style="width:###SLIDERWIDTH###px; height:###SLIDERHEIGHT###px;">
+ 	<div class="preload" ><div style="width:###IMAGEWIDTH###px; height:###IMAGEHEIGHT###px;">&nbsp;</div></div>
+  <div class="lof-main-outer" style="width:###IMAGEWIDTH###px; height:###IMAGEHEIGHT###px;">
+  	<div class="lof-main-wapper">
+	  <!-- ###SLIDER### begin -->
+   		<div class="lof-item">
+        ###IMAGE###           
+        <div class="lof-description ###DESCRIPTION-BG###" style="###DESCRIPTION-STYLE###">
+          <h3 class="lof-title" style="###HEADER-STYLE###">###TITLELINK###</h3>
+          ###TEXT###  ###READMORE###      
+        </div>   
+      </div> 
+ 	  <!-- ###SLIDER### end -->
+  </div>
+  </div>
+  <div class="lof-navigator-wapper">
+      <div class="lof-navigator-outer">
+        <ul class="lof-navigator">
+	    <!-- ###NAVIGATION### begin -->
+          <li class="navSelector">###NUMBER###</li>
+ 	    <!-- ###NAVIGATION### end -->
+        </ul>
+      </div> 		
+  </div>
+  ###PAUSEBUTTON###
+  ###PROGRESSBAR###
+  </div>
+  ###PAGINATION###
+</div>
+###INLINE_OVERLAY###
+<!-- ###SLIDERSTYLE_4### end -->
+<br />
+<br />
+<h2>Slider Style 5</h2>
+<br />
+<!-- ###SLIDERSTYLE_5### begin -->
+<div id="lofslidecontent###CEID###" class="lof-slider_5" style="height:###SLIDERHEIGHT###px; width:###SLIDERWIDTH###px">
+  <div class="lof-wrapper ###CSS3###" style="width:###SLIDERWIDTH###px; height:###SLIDERHEIGHT###px;">
+ 	<div class="preload" ><div style="width:###IMAGEWIDTH###px; height:###IMAGEHEIGHT###px;">&nbsp;</div></div>
+  <div class="lof-main-outer" style="width:###IMAGEWIDTH###px; height:###IMAGEHEIGHT###px;">
+    <div onclick="return false" class="lof-previous">Previous</div>
+  	<div class="lof-main-wapper">
+	  <!-- ###SLIDER### begin -->
+   		<div class="lof-item">
+        ###IMAGE###           
+        <div class="lof-description ###DESCRIPTION-BG###" style="###DESCRIPTION-STYLE###">
+          <h3 class="lof-title" style="###HEADER-STYLE###">###TITLELINK###</h3>
+          ###TEXT###  ###READMORE###     
+        </div>   
+      </div> 
+ 	  <!-- ###SLIDER### end -->
+  </div>
+  <div onclick="return false" class="lof-next"></div>
+  </div>
+  ###PAUSEBUTTON###
+  ###PROGRESSBAR###
+  </div>
+  ###PAGINATION###
+</div>
+###INLINE_OVERLAY###
+<!-- ###SLIDERSTYLE_5### end -->
+<br />
+<br />
+<h2>Slider Style 6</h2>
+<br />
+<!-- ###SLIDERSTYLE_6### begin -->
+<div id="lofslidecontent###CEID###" class="lof-slider_6" style="width:###SLIDERWIDTH###px; height:###SLIDERHEIGHT###px;">
+<div class="lof-wrapper ###CSS3###" style="width:###SLIDERWIDTH###px; height:###SLIDERHEIGHT###px;">
+  <div class="preload" style="width:###IMAGEWIDTH###px; height:###IMAGEHEIGHT###px;"><div style="width:###IMAGEWIDTH###px; height:###IMAGEHEIGHT###px;">&nbsp;</div></div>
+  <div class="lof-main-outer" style="width:###IMAGEWIDTH###px; height:###SLIDERHEIGHT###px;">
+  	<div class="lof-main-wapper">
+	  <!-- ###SLIDER### begin -->
+      <div class="lof-item">
+        ###IMAGE###           
+        <div class="lof-description" style="###DESCRIPTION-STYLE###">
+          <h3 class="lof-title" style="###HEADER-STYLE###">###TITLELINK###</h3>
+          ###TEXT###  ###READMORE###
+        </div>
+      </div> 
+ 	  <!-- ###SLIDER### end -->
+    </div>  	
+  </div>
+  <div class="lof-navigator-outer">
+    <ul class="lof-navigator">
+    <!-- ###NAVIGATION### begin -->
+      <li class="navSelector">
+       	<div style="###NAVSELECTOR-STYLE###">
+          ###THUMBNAIL###
+          <h3 style="###HEADER-STYLE###">###TITLE###</h3>
+          ###DATE###
+        </div>    
+      </li>
+    <!-- ###NAVIGATION### end -->
+    </ul>
+  </div>
+  ###PROGRESSBAR###
+  ###PAUSEBUTTON###
+</div>
+###PAGINATION###
+</div>
+###INLINE_OVERLAY###
+<!-- ###SLIDERSTYLE_6### end -->
+<br />
+<br />
+<h2>Slider Style 7 / Nivo</h2>
+<br />
+<!-- ###SLIDERSTYLE_7### begin -->
+<div class="slider-wrapper" style="width:###SLIDERWIDTH###px;">
+###PAUSEBUTTON###
+###PROGRESSBAR###
+<div id="nivoslider###CEID###" class="nivoSlider theme-default ###CSS3###" style="width:###SLIDERWIDTH###px; height:###SLIDERHEIGHT###px;">
+<!-- ###SLIDER### begin -->
+    ###IMAGE###
+<!-- ###SLIDER### end -->
+</div> 
+<!-- ###NAVIGATION### begin -->
+<div id="caption-###NUMBER###" class="nivo-html-caption">
+    <h3 class="nivo-title" style="###HEADER-STYLE###">###TITLELINK###</h3>
+    ###TEXT###  ###READMORE### 
+</div>
+<!-- ###NAVIGATION### end --> 
+</div>
+<!-- ###SLIDERSTYLE_7### end -->
+
+
+<br />
+<br />
+<h2>Slider Style 8</h2>
+<br />
+<!-- ###SLIDERSTYLE_8### begin -->
+<div id="lofslidecontent###CEID###" class="lof-slider_8" style="width:###SLIDERWIDTH###px; height:###SLIDERHEIGHT###px;">
+<div class="lof-wrapper ###CSS3###" style="width:###SLIDERWIDTH###px; height:###SLIDERHEIGHT###px;">
+  <div class="preload" style="width:###IMAGEWIDTH###px; height:###IMAGEHEIGHT###px;"><div style="width:###IMAGEWIDTH###px; height:###IMAGEHEIGHT###px;">&nbsp;</div></div>
+  <div class="lof-main-outer" style="width:###IMAGEWIDTH###px; height:###IMAGEHEIGHT###px;">
+  	<div class="lof-main-wapper">
+	  <!-- ###SLIDER### begin -->
+      <div class="lof-item">
+        ###IMAGE###           
+        <div class="lof-description ###DESCRIPTION-BG###" style="###DESCRIPTION-STYLE###">
+          <h3 class="lof-title" style="###HEADER-STYLE###">###TITLELINK###</h3>
+          ###TEXT### ###READMORE###         
+        </div>
+      </div> 
+ 	  <!-- ###SLIDER### end -->
+    </div>  	
+  </div>
+<div class="lof-navigator-outer ###NAV-POSITION###">
+    <ul class="lof-navigator ###ACTNAVCOLOR###">
+    <!-- ###NAVIGATION### begin -->
+      <li class="navSelector">
+       	<div style="###NAVSELECTOR-STYLE###">
+          ###THUMBNAIL###
+          <h3 style="###HEADER-STYLE###">###TITLE###</h3>
+        </div>    
+      </li>
+    <!-- ###NAVIGATION### end -->
+    </ul>
+  </div>
+  ###PROGRESSBAR###
+  ###PAUSEBUTTON###
+</div>
+###PAGINATION###
+</div> 
+###INLINE_OVERLAY###
+<!-- ###SLIDERSTYLE_8### end -->
+<br />
+<br />
+<h2>Slider Style 8 TOP</h2>
+<br />
+<!-- ###SLIDERSTYLE_8_TOP### begin -->
+<div id="lofslidecontent###CEID###" class="lof-slider_8-1" style="width:###SLIDERWIDTH###px; height:###SLIDERHEIGHT###px;">
+<div class="lof-wrapper ###CSS3###" style="width:###SLIDERWIDTH###px; height:###SLIDERHEIGHT###px;">
+  <div class="preload" style="width:###IMAGEWIDTH###px; height:###IMAGEHEIGHT###px;"><div style="width:###IMAGEWIDTH###px; height:###IMAGEHEIGHT###px;">&nbsp;</div></div>
+
+<div class="lof-navigator-outer ###NAV-POSITION###">
+<div style="width:###IMAGEWIDTH###px; height:10%; overflow:hidden; position:absolute;">
+    <ul class="lof-navigator ###ACTNAVCOLOR###">
+    <!-- ###NAVIGATION### begin -->
+      <li class="navSelector">
+       	<div>
+          <h3 style="###HEADER-STYLE###">###TITLE###</h3>
+        </div>    
+      </li>
+    <!-- ###NAVIGATION### end -->
+    </ul>
+</div>
+  </div>
+  <div class="lof-main-outer" style="width:###IMAGEWIDTH###px; height:###IMAGEHEIGHT###px;">
+  	<div class="lof-main-wapper">
+	  <!-- ###SLIDER### begin -->
+      <div class="lof-item">
+        ###IMAGE###           
+        <div class="lof-description ###DESCRIPTION-BG###" style="###DESCRIPTION-STYLE###">
+          <h3 class="lof-title" style="###HEADER-STYLE###">###TITLELINK###</h3>
+          ###TEXT### ###READMORE###         
+        </div>
+      </div> 
+ 	  <!-- ###SLIDER### end -->
+    </div>  	
+  </div>
+
+  ###PROGRESSBAR###
+  ###PAUSEBUTTON###
+</div>
+###PAGINATION###
+</div> 
+###INLINE_OVERLAY###
+<!-- ###SLIDERSTYLE_8_TOP### end -->
+
+</body>
+</html>

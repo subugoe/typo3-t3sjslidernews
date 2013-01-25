@@ -1,0 +1,1434 @@
+<T3DataStructure>
+   <meta>
+      <langDisable>1</langDisable>
+   </meta>
+   <sheets>
+      <tab1>
+         <ROOT>
+            <TCEforms>
+              <sheetTitle>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.sheet_general</sheetTitle>
+              <cshFile>LLL:EXT:t3s_jslidernews/pi1/locallang_csh.xml</cshFile>
+            </TCEforms>
+            <type>array</type>
+            <el>
+    					<contentStyle>
+    						<TCEforms>
+    							<onChange>reload</onChange>
+          			  <exclude>1</exclude>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.contentStyle</label>
+    							<config>
+    								<type>select</type>
+    								<size>1</size>
+    								<maxitems>1</maxitems>
+    								<items type="array">
+    									<numIndex index="0" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.contentStyle.I.0</numIndex>
+    										<numIndex index="1">tt_news</numIndex>
+										    <numIndex index="2">EXT:t3s_jslidernews/res/icons/icon_ttnews.gif</numIndex>
+    									</numIndex>
+    									<numIndex index="1" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.contentStyle.I.1</numIndex>
+    										<numIndex index="1">tt_content</numIndex>
+										    <numIndex index="2">EXT:t3s_jslidernews/res/icons/icon_content.png</numIndex>
+    									</numIndex>
+    									<numIndex index="2" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.contentStyle.I.2</numIndex>
+    										<numIndex index="1">pages</numIndex>
+										    <numIndex index="2">EXT:t3s_jslidernews/res/icons/icon_pages.png</numIndex>
+    									</numIndex>
+    								</items>
+    							</config>
+    						</TCEforms>
+    					</contentStyle>
+    					<ttnewsType>
+    						<TCEforms>
+                  <exclude>1</exclude>
+    						  <displayCond>FIELD:contentStyle:=:,tt_news</displayCond>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.ttnewsType</label>
+    							<config>
+    								<type>select</type>
+    								<size>1</size>
+    								<maxitems>1</maxitems>
+   								   <items type="array">
+    									<numIndex index="0" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.ttnewsType.I.0</numIndex>
+    										<numIndex index="1">0</numIndex>
+    									</numIndex>
+    									<numIndex index="1" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.ttnewsType.I.1</numIndex>
+    										<numIndex index="1">1</numIndex>
+    									</numIndex>
+    									<numIndex index="2" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.ttnewsType.I.2</numIndex>
+    										<numIndex index="1">2</numIndex>
+    									</numIndex>
+    									<numIndex index="3" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.ttnewsType.I.3</numIndex>
+    										<numIndex index="1">3</numIndex>
+    									</numIndex>
+    								</items>
+    							</config>
+    						</TCEforms>
+    					</ttnewsType>
+          		<ttnewsSysFolder>
+          				<TCEforms>
+                  <exclude>1</exclude>
+          			  <displayCond>FIELD:contentStyle:=:,tt_news</displayCond>
+          				<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.ttnewsSysFolder</label>
+          				<config>
+            				<type>group</type>
+            				<internal_type>db</internal_type>
+            				<allowed>pages</allowed>
+            				<size>4</size>
+            				<maxitems>999</maxitems>
+            				<minitems>0</minitems>
+            				<show_thumbs>1</show_thumbs>				
+                  </config>
+          				</TCEforms>
+          		</ttnewsSysFolder>         		
+           		<ttnewsSinglePid>
+          			<TCEforms>
+          			<exclude>1</exclude>
+    						<displayCond>FIELD:contentStyle:=:,tt_news</displayCond>
+          			<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.ttnewsSinglePid</label>
+          			<config>
+          				<type>group</type>
+          				<internal_type>db</internal_type>
+          				<allowed>pages</allowed>
+          				<size>1</size>
+          				<maxitems>1</maxitems>
+          				<minitems>0</minitems>
+          				<show_thumbs>1</show_thumbs>
+          			</config>
+          			</TCEforms>
+          		</ttnewsSinglePid>
+    					<catSinglePid>
+    						<TCEforms>
+       			     <exclude>1</exclude>
+    							<displayCond>FIELD:contentStyle:=:,tt_news</displayCond>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.catSinglePid</label>
+    							<config>
+    								<type>check</type>
+    								<default>0</default>
+    							</config>
+    						</TCEforms>
+    					</catSinglePid>
+              <sliderCat>
+                <TCEforms>
+                  <exclude>1</exclude>
+      						<displayCond>FIELD:contentStyle:=:,tt_news</displayCond>
+                  <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.sliderCat</label>
+                  <config>
+          				<type>group</type>
+          				<internal_type>db</internal_type>
+          				<allowed>tt_news_cat</allowed>
+          				<size>4</size>
+          				<maxitems>999</maxitems>
+          				<minitems>0</minitems>
+          				<show_thumbs>1</show_thumbs>
+                  </config>
+                </TCEforms>
+              </sliderCat>
+              <contentElement>
+                <TCEforms>
+                  <exclude>1</exclude>
+      						<displayCond>FIELD:contentStyle:=:tt_content</displayCond>
+                  <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.contentElement</label>
+                  <config>
+          				<type>group</type>
+          				<internal_type>db</internal_type>
+          				<allowed>tt_content</allowed>
+          				<size>10</size>
+          				<maxitems>999</maxitems>
+          				<minitems>0</minitems>
+          				<show_thumbs>1</show_thumbs>
+                  </config>
+                </TCEforms>
+              </contentElement>
+				      <pages>
+                <TCEforms>
+                  <exclude>1</exclude>
+      						<displayCond>FIELD:contentStyle:=:pages</displayCond>
+                  <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.pages</label>
+                  <config>
+          				<type>group</type>
+          				<internal_type>db</internal_type>
+          				<allowed>pages</allowed>
+          				<size>10</size>
+          				<maxitems>999</maxitems>
+          				<minitems>0</minitems>
+          				<show_thumbs>1</show_thumbs>
+                  </config>
+                </TCEforms>
+              </pages>              
+				      <contentPages>
+                <TCEforms>
+                  <exclude>1</exclude>
+      						<displayCond>FIELD:contentStyle:=:tt_content</displayCond>
+                  <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.contentPages</label>
+                  <config>
+          				<type>group</type>
+          				<internal_type>db</internal_type>
+          				<allowed>pages</allowed>
+          				<size>10</size>
+          				<maxitems>999</maxitems>
+          				<minitems>0</minitems>
+          				<show_thumbs>1</show_thumbs>
+                  </config>
+                </TCEforms>
+              </contentPages>              
+           		<defaultLink>
+          			<TCEforms>
+          			<exclude>1</exclude>
+        				<displayCond>FIELD:contentStyle:=:,tt_content,pages</displayCond>
+                <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.defaultLink</label>
+          			<config>
+          				<type>group</type>
+          				<internal_type>db</internal_type>
+          				<allowed>pages</allowed>
+          				<size>10</size>
+          				<maxitems>999</maxitems>
+          				<minitems>0</minitems>
+          				<show_thumbs>1</show_thumbs>
+          				<multiple>1</multiple>
+          			</config>
+          			</TCEforms>
+          		</defaultLink>            
+    					<contentOrderBy>
+    						<TCEforms>
+       			     <exclude>1</exclude>
+    							<displayCond>FIELD:contentStyle:=:,tt_content</displayCond>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.contentOrderBy</label>
+    							<config>
+    								<type>check</type>
+    								<default>0</default>
+    							</config>
+    						</TCEforms>
+    					</contentOrderBy>
+              <defaultImage>
+                <TCEforms>
+                  <exclude>1</exclude>
+      						<displayCond>FIELD:contentStyle:=:,tt_news,tt_content,pages</displayCond>
+      						<displayCond>EXT:dam:LOADED:false</displayCond>     
+                  <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.defaultImage</label>
+                  <config>
+                    <type>group</type>
+                    <internal_type>file</internal_type>
+                    <allowed>gif,jpg,jpeg,png</allowed>
+                    <max_size>10240</max_size>
+                    <uploadfolder>uploads/tx_t3sjslidernews</uploadfolder>
+                    <show_thumbs>1</show_thumbs>
+								    <maxitems>999</maxitems>
+								    <minitems>0</minitems>
+                    <size>4</size>
+                  </config>
+                </TCEforms>
+              </defaultImage>
+  						<defaultImageDAM>
+  							<TCEforms>
+                  <exclude>1</exclude>
+      						<displayCond>FIELD:contentStyle:=:,tt_news,tt_content,pages</displayCond>
+      						<displayCond>EXT:dam:LOADED:true</displayCond>
+  								<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.defaultImage</label>
+  								<config>
+  									<form_type>user</form_type>
+  									<userFunc><![CDATA[EXT:dam/lib/class.tx_dam_tcefunc.php:&tx_dam_tceFunc->getSingleField_typeMedia]]></userFunc>
+  									<type>group</type>
+  									<internal_type>db</internal_type>
+  									<allowed>tx_dam</allowed>
+  									<prepend_tname>1</prepend_tname>
+  									<MM>tx_dam_mm_ref</MM>
+  									<MM_foreign_select>1</MM_foreign_select>
+  									<MM_opposite_field>file_usage</MM_opposite_field>
+  									<MM_match_fields>
+  										<ident>tx_t3sjslidernews_images</ident>
+  									</MM_match_fields>
+  									<allowed_types>gif,jpg,jpeg,png</allowed_types>
+  									<max_size>99000</max_size>
+  									<show_thumbs>1</show_thumbs>
+  									<size>6</size>
+  									<maxitems>100</maxitems>
+  								</config>
+  							</TCEforms>
+   						</defaultImageDAM>
+    					<requireImage>
+    						<TCEforms>
+       			     <exclude>1</exclude>
+    							<displayCond>FIELD:contentStyle:=:,tt_news</displayCond>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.requireOrImage</label>
+    							<config>
+                    <type>select</type>
+    								<default>2</default>
+                    <items type="array">
+                    	<numIndex index="0" type="array">
+                    	 <numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.requireImage</numIndex>
+                    	 <numIndex index="1">0</numIndex>
+                    	</numIndex>
+                    	<numIndex index="1" type="array">
+                    	 <numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.onlyDefaultImage</numIndex>
+                    	 <numIndex index="1">1</numIndex>
+                    	</numIndex>
+                    	<numIndex index="2" type="array">
+                    	 <numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.bothImage</numIndex>
+                    	 <numIndex index="1">2</numIndex>
+                    	</numIndex>
+                    </items>
+    							</config>
+    						</TCEforms>
+    					</requireImage>
+    					<onlyDefaultImage>
+    						<TCEforms>
+       			     <exclude>1</exclude>
+    							<displayCond>FIELD:contentStyle:=:tt_content</displayCond>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.onlyDefaultImage</label>
+    							<config>
+    								<type>check</type>
+    								<default>0</default>
+    							</config>
+    						</TCEforms>
+    					</onlyDefaultImage>
+          		<imageOrder>
+          			<TCEforms>
+                  <exclude>1</exclude>
+    						  <displayCond>FIELD:contentStyle:=:,tt_news,tt_content,pages</displayCond>
+          				<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.imageOrder</label>
+          				<config>
+          					<type>select</type>
+      							<default>0</default>
+          					<items type="array">
+          						<numIndex index="0" type="array">
+          							<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.imageOrder_random</numIndex>
+          							<numIndex index="1">0</numIndex>
+          						</numIndex>
+          						<numIndex index="1" type="array">
+          							<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.imageOrder_order</numIndex>
+          							<numIndex index="1">1</numIndex>
+          						</numIndex>
+          					</items>
+          				</config>
+          			</TCEforms>
+          		</imageOrder>
+          		<ascDescField>
+          			<TCEforms>
+                  <exclude>1</exclude>
+    						  <displayCond>FIELD:contentStyle:=:,tt_news</displayCond>
+          				<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.ascDescField</label>
+          				<config>
+          					<type>select</type>
+    								<default>0</default>
+          					<items type="array">
+          						<numIndex index="0" type="array">
+          							<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.ascDescField.I.0</numIndex>
+          							<numIndex index="1">0</numIndex>
+          						</numIndex>
+          						<numIndex index="1" type="array">
+          							<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.ascDescField.I.1</numIndex>
+          							<numIndex index="1">archivedate</numIndex>
+          						</numIndex>
+          						<numIndex index="2" type="array">
+          							<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.ascDescField.I.2</numIndex>
+          							<numIndex index="1">author</numIndex>
+          						</numIndex>
+          						<numIndex index="3" type="array">
+          							<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.ascDescField.I.3</numIndex>
+          							<numIndex index="1">title</numIndex>
+          						</numIndex>
+          						<numIndex index="4" type="array">
+          							<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.ascDescField.I.4</numIndex>
+          							<numIndex index="1">type</numIndex>
+          						</numIndex>
+          					</items>
+          				</config>
+          			</TCEforms>
+          		</ascDescField>
+          		<ascDesc>
+          			<TCEforms>
+                  <exclude>1</exclude>
+    						  <displayCond>FIELD:contentStyle:=:,tt_news</displayCond>
+          				<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.ascDesc</label>
+          				<config>
+          					<type>select</type>
+    								<default>0</default>
+          					<items type="array">
+          						<numIndex index="0" type="array">
+          							<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.ascDesc_desc</numIndex>
+          							<numIndex index="1">0</numIndex>
+          						</numIndex>
+          						<numIndex index="1" type="array">
+          							<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.ascDesc_asc</numIndex>
+          							<numIndex index="1">1</numIndex>
+          						</numIndex>
+          						<numIndex index="2" type="array">
+          							<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.ascDesc_random</numIndex>
+          							<numIndex index="1">2</numIndex>
+          						</numIndex>
+          					</items>
+          				</config>
+          			</TCEforms>
+          		</ascDesc>
+    					<newsArchive>
+    						<TCEforms>
+       			     <exclude>1</exclude>
+    							<displayCond>FIELD:contentStyle:=:,tt_news</displayCond>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.newsArchive</label>
+    							<config>
+    								<type>check</type>
+    								<default>0</default>
+    							</config>
+    						</TCEforms>
+    					</newsArchive>
+     					<excludeAlreadyDisplayedNews>
+    						<TCEforms>
+       			     <exclude>1</exclude>
+    							<displayCond>FIELD:contentStyle:=:,tt_news</displayCond>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.excludeAlreadyDisplayedNews</label>
+    							<config>
+    								<type>check</type>
+    								<default>0</default>
+    							</config>
+    						</TCEforms>
+    					</excludeAlreadyDisplayedNews>
+           		<newsLimit>
+          				<TCEforms>
+                  <exclude>1</exclude>
+    						  <displayCond>FIELD:contentStyle:=:,tt_news</displayCond>
+          				<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.newsLimit</label>
+          				<config>
+          					<type>input</type>
+          					<size>6</size>
+                    <eval>int,nospace</eval>
+          					<checkbox></checkbox>
+          				</config>
+          				</TCEforms>
+          		</newsLimit>         		
+          		<fixedLgd>
+          			<TCEforms>
+                  <exclude>1</exclude>
+    						  <displayCond>FIELD:contentStyle:=:,tt_news,tt_content,pages</displayCond>
+          				<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.fixedLgd</label>
+          				<config>
+          					<type>input</type>
+          					<size>6</size>
+                    <eval>int,nospace</eval>
+          					<checkbox></checkbox>
+          				</config>
+          			</TCEforms>
+          		</fixedLgd>         		
+          		<overlay>
+          			<TCEforms>
+                  <exclude>1</exclude>
+    						  <displayCond>FIELD:contentStyle:=:,tt_content</displayCond>
+          				<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.overlay</label>
+          				<config>
+          					<type>select</type>
+      							<default>0</default>
+          					<items type="array">
+          						<numIndex index="0" type="array">
+          							<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.overlay.I.0</numIndex>
+          							<numIndex index="1">0</numIndex>
+          						</numIndex>
+          						<numIndex index="1" type="array">
+          							<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.overlay.I.1</numIndex>
+          							<numIndex index="1">1</numIndex>
+          						</numIndex>
+          						<numIndex index="2" type="array">
+          							<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.overlay.I.2</numIndex>
+          							<numIndex index="1">2</numIndex>
+          						</numIndex>
+          					</items>
+          				</config>
+          			</TCEforms>
+          		</overlay>
+    					<newsOverlay>
+    						<TCEforms>
+       			     <exclude>1</exclude>
+    							<displayCond>FIELD:contentStyle:=:,tt_news</displayCond>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.newsOverlay</label>
+    							<config>
+    								<type>check</type>
+    								<default>0</default>
+    							</config>
+    						</TCEforms>
+    					</newsOverlay>
+    					<videoOverlay>
+    						<TCEforms>
+       			     <exclude>1</exclude>
+    							<displayCond>FIELD:contentStyle:=:,tt_news,tt_content</displayCond>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.videoOverlay</label>
+    							<config>
+    								<type>check</type>
+    								<default>0</default>
+    							</config>
+    						</TCEforms>
+    					</videoOverlay>
+    					<gallery>
+    						<TCEforms>
+       			     <exclude>1</exclude>
+    							<displayCond>FIELD:contentStyle:=:,tt_news,tt_content</displayCond>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.gallery</label>
+    							<config>
+    								<type>check</type>
+    								<default>0</default>
+    							</config>
+    						</TCEforms>
+    					</gallery>
+    					<dateFormat>
+    						<TCEforms>
+                  <exclude>1</exclude>
+    						  <displayCond>FIELD:contentStyle:=:,tt_news,tt_content</displayCond>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.dateFormat</label>
+    							<config>
+    								<type>select</type>
+    								<size>1</size>
+    								<maxitems>1</maxitems>
+   								   <items type="array">
+    									<numIndex index="0" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.dateFormat.I.0</numIndex>
+    										<numIndex index="1">0</numIndex>
+    									</numIndex>
+    									<numIndex index="1" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.dateFormat.I.1</numIndex>
+    										<numIndex index="1">%A %d.%m.%Y</numIndex>
+    									</numIndex>
+    									<numIndex index="2" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.dateFormat.I.2</numIndex>
+    										<numIndex index="1">%d.%m.%Y - %H:%M</numIndex>
+    									</numIndex>
+    									<numIndex index="3" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.dateFormat.I.3</numIndex>
+    										<numIndex index="1">%d.%m.%Y</numIndex>
+    									</numIndex>
+    									<numIndex index="4" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.dateFormat.I.4</numIndex>
+    										<numIndex index="1">%A %m.%d.%Y - %H:%M</numIndex>
+    									</numIndex>
+    									<numIndex index="5" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.dateFormat.I.5</numIndex>
+    										<numIndex index="1">%A %m.%d.%Y</numIndex>
+    									</numIndex>
+    									<numIndex index="6" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.dateFormat.I.6</numIndex>
+    										<numIndex index="1">%m.%d.%Y - %H:%M</numIndex>
+    									</numIndex>
+    									<numIndex index="7" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.dateFormat.I.7</numIndex>
+    										<numIndex index="1">%m.%d.%Y</numIndex>
+    									</numIndex>
+    								</items>
+    							</config>
+    						</TCEforms>
+    					</dateFormat>
+    					<templateFile>
+    						<TCEforms>
+                  <exclude>1</exclude>
+    						  <displayCond>FIELD:contentStyle:=:,tt_news,tt_content,pages</displayCond>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.templateFile</label>
+    							<config>
+        						<type>input</type>
+        						<eval>trim</eval>
+        						<wizards type="array">
+        							<_PADDING>2</_PADDING>
+        							<link type="array">
+        								<type>popup</type>
+        								<title>Link</title>
+        								<icon>link_popup.gif</icon>
+        								<script>browse_links.php?mode=wizard&amp;act=file</script>
+        								<params type="array">
+        									<blindLinkOptions>page,url,mail,spec,folder</blindLinkOptions>
+								          <allowedExtensions>htm,html,tmpl,tpl</allowedExtensions>
+                				</params>
+        								<JSopenParams>height=300,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
+        							</link>
+        						</wizards>
+    							</config>
+    						</TCEforms>
+    					</templateFile> 
+            </el>
+         </ROOT>
+      </tab1>
+
+			<!-- Slider -->
+
+      <tab2>
+         <ROOT>
+            <TCEforms>
+               <sheetTitle>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.sheet_slider</sheetTitle>
+               <cshFile>LLL:EXT:t3s_jslidernews/pi1/locallang_csh.xml</cshFile>
+            </TCEforms>
+            <type>array</type>
+            <el>  
+    					<sliderStyle>
+    						<TCEforms>
+    							<onChange>reload</onChange>
+          			  <exclude>1</exclude>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.sliderStyle</label>
+    							<config>
+    								<type>select</type>
+    								<size>1</size>
+    								<maxitems>1</maxitems>
+    								<items type="array">
+    									<numIndex index="0" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.sliderStyle.I.0</numIndex>
+    										<numIndex index="1">1</numIndex>
+										    <numIndex index="2">EXT:t3s_jslidernews/res/icons/icon_thumb-1.jpg</numIndex>
+    									</numIndex>
+    									<numIndex index="1" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.sliderStyle.I.1</numIndex>
+    										<numIndex index="1">2</numIndex>
+										    <numIndex index="2">EXT:t3s_jslidernews/res/icons/icon_thumb-2.jpg</numIndex>
+    									</numIndex>
+    									<numIndex index="2" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.sliderStyle.I.2</numIndex>
+    										<numIndex index="1">3</numIndex>
+										    <numIndex index="2">EXT:t3s_jslidernews/res/icons/icon_thumb-3.jpg</numIndex>
+    									</numIndex>
+    									<numIndex index="3" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.sliderStyle.I.3</numIndex>
+    										<numIndex index="1">4</numIndex>
+										    <numIndex index="2">EXT:t3s_jslidernews/res/icons/icon_thumb-4.jpg</numIndex>
+    									</numIndex>
+    									<numIndex index="4" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.sliderStyle.I.4</numIndex>
+    										<numIndex index="1">5</numIndex>
+										    <numIndex index="2">EXT:t3s_jslidernews/res/icons/icon_thumb-5.jpg</numIndex>
+    									</numIndex>
+    									<numIndex index="5" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.sliderStyle.I.5</numIndex>
+    										<numIndex index="1">6</numIndex>
+										    <numIndex index="2">EXT:t3s_jslidernews/res/icons/icon_thumb-6.jpg</numIndex>
+    									</numIndex>
+                  		<numIndex index="6" type="array">
+                  			<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.sliderStyle.I.6</numIndex>
+                  			<numIndex index="1">7</numIndex>
+                  	    <numIndex index="2">EXT:t3s_jslidernews/res/icons/icon_thumb-7.jpg</numIndex>
+                  		</numIndex>
+                  		<numIndex index="7" type="array">
+                  			<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.sliderStyle.I.7</numIndex>
+                  			<numIndex index="1">8</numIndex>
+                  	    <numIndex index="2">EXT:t3s_jslidernews/res/icons/icon_thumb-8.jpg</numIndex>
+                  		</numIndex>
+    								</items>
+    							</config>
+    						</TCEforms>
+    					</sliderStyle>
+    					<variant>
+    						<TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:2,3</displayCond>
+          			  <exclude>1</exclude>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.variant</label> 
+    							<config>
+    								<type>select</type>
+    								<size>1</size>
+    								<maxitems>1</maxitems>
+    								<items type="array">
+    									<numIndex index="0" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.variant.I.0</numIndex>
+    										<numIndex index="1">0</numIndex>
+    									</numIndex>
+    									<numIndex index="1" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.variant.I.1</numIndex>
+    										<numIndex index="1">1</numIndex>
+    									</numIndex>
+    									<numIndex index="2" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.variant.I.2</numIndex>
+    										<numIndex index="1">2</numIndex>
+    									</numIndex>
+    								</items>
+    							</config>
+    						</TCEforms>
+    					</variant>
+    					<topBottomNav>
+    						<TCEforms>
+       			     <exclude>1</exclude>
+                  <displayCond>FIELD:sliderStyle:=:8</displayCond>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.topBottomNav</label>
+    							<config>
+    								<type>check</type>
+    								<default>0</default>
+    							</config>
+    						</TCEforms>
+    					</topBottomNav>
+          		<sliderWidth>
+          				<TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:,1,2,3,4,5,6,7,8</displayCond>
+                  <exclude>1</exclude>
+          				<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.sliderWidth</label>
+          				<config>
+          					<type>input</type>
+          					<size>6</size>
+                    <eval>int,nospace</eval>
+          					<checkbox></checkbox>
+          				</config>
+          				</TCEforms>
+          		</sliderWidth>
+          		<sliderHeight>
+          				<TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:,1,4,5,7,8</displayCond>
+                  <exclude>1</exclude>
+          				<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.sliderHeight</label>
+          				<config>
+          					<type>input</type>
+          					<size>6</size>
+                    <eval>int,nospace</eval>
+          					<checkbox></checkbox>
+          				</config>
+          				</TCEforms>
+          		</sliderHeight>
+          		<imageSixHeight>
+          				<TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:6</displayCond>
+                  <exclude>1</exclude>
+          				<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.imageSixHeight</label>
+          				<config>
+          					<type>input</type>
+          					<size>6</size>
+                    <eval>int,nospace</eval>
+          					<checkbox></checkbox>
+          				</config>
+          				</TCEforms>
+          		</imageSixHeight>
+    					<easing>
+    						<TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:,1,2,3,4,5,6,8</displayCond>
+          			  <exclude>1</exclude>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.easing</label>
+    							<config>
+    								<type>select</type>
+    								<size>1</size>
+    								<maxitems>1</maxitems>
+    								<items type="array">
+    									<numIndex index="0" type="array">
+    										<numIndex index="0">easeInOutExpo</numIndex>
+    										<numIndex index="1">0</numIndex>
+    									</numIndex>
+    									<numIndex index="1" type="array">
+    										<numIndex index="0">easeInOutSine</numIndex>
+    										<numIndex index="1">easeInOutSine</numIndex>
+    									</numIndex>
+    									<numIndex index="2" type="array">
+    										<numIndex index="0">easeInOutQuad</numIndex>
+    										<numIndex index="1">easeInOutQuad</numIndex>
+    									</numIndex>
+    									<numIndex index="3" type="array">
+    										<numIndex index="0">easeOutBounce</numIndex>
+    										<numIndex index="1">easeOutBounce</numIndex>
+    									</numIndex>
+    								</items>
+    							</config>
+    						</TCEforms>
+    					</easing>
+    					<event>
+    						<TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:2,3,6,8</displayCond>
+          			  <exclude>1</exclude>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.event</label>
+    							<config>
+    								<type>select</type>
+    								<size>1</size>
+    								<maxitems>1</maxitems>
+    								<items type="array">
+    									<numIndex index="0" type="array">
+    										<numIndex index="0">click</numIndex>
+    										<numIndex index="1">0</numIndex>
+    									</numIndex>
+    									<numIndex index="1" type="array">
+    										<numIndex index="0">mouseover</numIndex>
+    										<numIndex index="1">mouseover</numIndex>
+    									</numIndex>
+    								</items>
+    							</config>
+    						</TCEforms>
+    					</event>
+    					<auto>
+    						<TCEforms>
+       			     <exclude>1</exclude>
+    							<displayCond>FIELD:sliderStyle:=:,1,2,3,4,5,6,8</displayCond>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.auto</label>
+    							<config>
+    								<type>check</type>
+    								<default>1</default>
+    							</config>
+    						</TCEforms>
+    					</auto>
+    					<pause>
+    						<TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:,1,2,3,4,5,6,8</displayCond>
+          			  <exclude>1</exclude>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.pause</label>
+    							<config>
+    								<type>select</type>
+    								<size>1</size>
+    								<maxitems>1</maxitems>
+    								<items type="array">
+    									<numIndex index="0" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.pause.I.0</numIndex>
+    										<numIndex index="1">0</numIndex>
+    									</numIndex>
+    									<numIndex index="1" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.pause.I.1</numIndex>
+    										<numIndex index="1">1</numIndex>
+    									</numIndex>
+    									<numIndex index="2" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.pause.I.2</numIndex>
+    										<numIndex index="1">2</numIndex>
+    									</numIndex>
+     								</items>
+    							</config>
+    						</TCEforms>
+    					</pause>
+              <interval>
+                  <TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:,1,2,3,4,5,6,8</displayCond>
+          			     <exclude>1</exclude>
+                     <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.interval</label>
+                     <config>
+                        <type>input</type>
+                        <size>5</size>
+                        <max>5</max>
+                        <eval>int,nospace</eval>
+                        <checkbox></checkbox>
+                     </config>
+                  </TCEforms>
+              </interval> 
+              <duration>
+                  <TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:,1,2,3,4,5,6,8</displayCond>
+          			     <exclude>1</exclude>
+                     <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.duration</label>
+                     <config>
+                        <type>input</type>
+                        <size>5</size>
+                        <max>5</max>
+                        <eval>int,nospace</eval>
+                        <checkbox></checkbox>
+                     </config>
+                  </TCEforms>
+              </duration>
+    					<direction>
+    						<TCEforms>
+       			     <exclude>1</exclude>
+    							<displayCond>FIELD:sliderStyle:=:,1,2,3,4,5,6,8</displayCond>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.direction</label>
+    							<config>
+    								<type>check</type>
+    								<default>0</default>
+    							</config>
+    						</TCEforms>
+    					</direction>
+    					<maxItemDisplay>
+    						<TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:,1,2,3,4,6,8</displayCond>
+                  <exclude>1</exclude>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.maxItemDisplay</label>
+    							<config>
+    								<type>select</type>
+    								<size>1</size>
+    								<maxitems>1</maxitems>
+   								<items type="array">
+    									<numIndex index="0" type="array">
+    										<numIndex index="0">3</numIndex>
+    										<numIndex index="1">0</numIndex>
+    									</numIndex>
+    									<numIndex index="1" type="array">
+    										<numIndex index="0">4</numIndex>
+    										<numIndex index="1">4</numIndex>
+    									</numIndex>
+    									<numIndex index="2" type="array">
+    										<numIndex index="0">5</numIndex>
+    										<numIndex index="1">5</numIndex>
+    									</numIndex>
+    									<numIndex index="3" type="array">
+    										<numIndex index="0">6</numIndex>
+    										<numIndex index="1">6</numIndex>
+    									</numIndex>
+    									<numIndex index="4" type="array">
+    										<numIndex index="0">7</numIndex>
+    										<numIndex index="1">7</numIndex>
+    									</numIndex>
+    									<numIndex index="5" type="array">
+    										<numIndex index="0">8</numIndex>
+    										<numIndex index="1">8</numIndex>
+    									</numIndex>
+    									<numIndex index="6" type="array">
+    										<numIndex index="0">9</numIndex>
+    										<numIndex index="1">9</numIndex>
+    									</numIndex>
+    									<numIndex index="7" type="array">
+    										<numIndex index="0">10</numIndex>
+    										<numIndex index="1">10</numIndex>
+    									</numIndex>
+    									<numIndex index="8" type="array">
+    										<numIndex index="0">15</numIndex>
+    										<numIndex index="1">15</numIndex>
+    									</numIndex>
+    								</items>
+    							</config>
+    						</TCEforms>
+    					</maxItemDisplay>
+              <navigatorHeight>
+                  <TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:2,3,6,8</displayCond>
+          			     <exclude>1</exclude>
+                     <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.navigatorHeight</label>
+                     <config>
+                        <type>input</type>
+                        <size>5</size>
+                        <max>3</max>
+                        <eval>int,nospace</eval>
+                        <checkbox></checkbox>
+                     </config>
+                  </TCEforms>
+              </navigatorHeight> 
+              <navigatorWidth>
+                  <TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:2,3,6</displayCond>
+          			     <exclude>1</exclude>
+                     <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.navigatorWidth</label>
+                     <config>
+                        <type>input</type>
+                        <size>5</size>
+                        <max>3</max>
+                        <eval>int,nospace</eval>
+                        <checkbox></checkbox>
+                     </config>
+                  </TCEforms>
+              </navigatorWidth> 
+    					<activeNavBg>
+    						<TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:2,3,8</displayCond>
+                  <exclude>1</exclude>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.activeNavBg</label>
+    							<config>
+    								<type>select</type>
+    								<size>1</size>
+    								<maxitems>1</maxitems>
+   								<items type="array">
+    									<numIndex index="0" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.activeNavBg.I.0</numIndex>
+    										<numIndex index="1">0</numIndex>
+    									</numIndex>
+    									<numIndex index="1" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.activeNavBg.I.1</numIndex>
+    										<numIndex index="1">darkred</numIndex>
+    									</numIndex>
+    									<numIndex index="2" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.activeNavBg.I.2</numIndex>
+    										<numIndex index="1">black</numIndex>
+    									</numIndex>
+    									<numIndex index="3" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.activeNavBg.I.3</numIndex>
+    										<numIndex index="1">red</numIndex>
+    									</numIndex>
+     									<numIndex index="4" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.activeNavBg.I.4</numIndex>
+    										<numIndex index="1">orange</numIndex>
+    									</numIndex>
+     									<numIndex index="5" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.activeNavBg.I.5</numIndex>
+    										<numIndex index="1">darkblue</numIndex>
+    									</numIndex>
+     									<numIndex index="6" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.activeNavBg.I.6</numIndex>
+    										<numIndex index="1">lightblue</numIndex>
+    									</numIndex>
+   								</items>
+    							</config>
+    						</TCEforms>
+    					</activeNavBg>
+              <thumbnailSize>
+                  <TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:2,3,6,8</displayCond>
+          			     <exclude>1</exclude>
+                     <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.thumbnailSize</label>
+                     <config>
+                        <type>input</type>
+                        <size>5</size>
+                        <max>2</max>
+                        <eval>int,nospace</eval>
+                        <checkbox></checkbox>
+                     </config>
+                  </TCEforms>
+              </thumbnailSize> 
+              <proportion>
+                <TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:,1</displayCond>
+          			     <exclude>1</exclude>
+                     <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.proportion</label>
+                     <config>
+                        <type>input</type>
+                        <size>3</size>
+                        <max>2</max>
+                        <eval>int,nospace</eval>
+                        <checkbox></checkbox>
+                     </config>
+                  </TCEforms>
+              </proportion> 
+    					<noArrows>
+    						<TCEforms>
+       			     <exclude>1</exclude>
+    							<displayCond>FIELD:sliderStyle:=:,1</displayCond>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.noArrows</label>
+    							<config>
+    								<type>check</type>
+    								<default>0</default>
+    							</config>
+    						</TCEforms>
+    					</noArrows>
+              <effect> 
+             	  <TCEforms>
+             	  <displayCond>FIELD:sliderStyle:=:7</displayCond>
+                  <exclude>1</exclude>
+                 <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.effect</label>
+							    <config>
+								    <type>select</type>
+			              <items type="array">
+  			              <numIndex index="0" type="array">
+  			               <numIndex index="0">random</numIndex>
+  			               <numIndex index="1">0</numIndex>
+  			              </numIndex>
+  			              <numIndex index="1" type="array">
+  			               <numIndex index="0">fade</numIndex>
+  			               <numIndex index="1">fade</numIndex>
+  			              </numIndex>                        
+  			              <numIndex index="2" type="array">
+  			               <numIndex index="0">fold</numIndex>
+  			               <numIndex index="1">fold</numIndex>
+  			              </numIndex>
+  			              <numIndex index="3" type="array">
+  			               <numIndex index="0">sliceUpDownLeft</numIndex>
+  			               <numIndex index="1">sliceUpDownLeft</numIndex>
+  			              </numIndex>
+  			              <numIndex index="4" type="array">
+  			               <numIndex index="0">sliceUpDown</numIndex>
+  			               <numIndex index="1">sliceUpDown</numIndex>
+  			              </numIndex>
+  			              <numIndex index="5" type="array">
+  			               <numIndex index="0">sliceUpLeft</numIndex>
+  			               <numIndex index="1">sliceUpLeft</numIndex>
+  			              </numIndex>
+  			              <numIndex index="6" type="array">
+  			               <numIndex index="0">sliceUp</numIndex>
+  			               <numIndex index="1">sliceUp</numIndex>
+  			              </numIndex>
+  			              <numIndex index="7" type="array">
+  			               <numIndex index="0">sliceDownLeft</numIndex>
+  			               <numIndex index="1">sliceDownLeft</numIndex>
+  			              </numIndex>
+  			              <numIndex index="8" type="array">
+  			               <numIndex index="0">sliceDown</numIndex>
+  			               <numIndex index="1">sliceDown</numIndex>
+  			              </numIndex>
+  			              <numIndex index="9" type="array">
+  			               <numIndex index="0">slideInRight</numIndex>
+  			               <numIndex index="1">slideInRight</numIndex>
+  			              </numIndex>
+  			              <numIndex index="10" type="array">
+  			               <numIndex index="0">slideInLeft</numIndex>
+  			               <numIndex index="1">slideInLeft</numIndex>
+  			              </numIndex>
+  			              <numIndex index="11" type="array">
+  			               <numIndex index="0">boxRandom</numIndex>
+  			               <numIndex index="1">boxRandom</numIndex>
+  			              </numIndex>
+  			              <numIndex index="12" type="array">
+  			               <numIndex index="0">boxRain</numIndex>
+  			               <numIndex index="1">boxRain</numIndex>
+  			              </numIndex>
+  			              <numIndex index="13" type="array">
+  			               <numIndex index="0">boxRainReverse</numIndex>
+  			               <numIndex index="1">boxRainReverse</numIndex>
+  			              </numIndex>
+  			              <numIndex index="14" type="array">
+  			               <numIndex index="0">boxRainGrow</numIndex>
+  			               <numIndex index="1">boxRainGrow</numIndex>
+  			              </numIndex>
+  			              <numIndex index="15" type="array">
+  			               <numIndex index="0">boxRainGrowReverse</numIndex>
+  			               <numIndex index="1">boxRainGrowReverse</numIndex>
+  			              </numIndex>
+			             </items>
+			             <minitems>0</minitems>
+			             <maxitems>1</maxitems>
+			             <size>1</size>
+			             <default>0</default>
+                  </config>
+                </TCEforms>
+              </effect>
+              <slices>
+                <TCEforms>
+             	  <displayCond>FIELD:sliderStyle:=:7</displayCond>
+                  <exclude>1</exclude>
+                  <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.slices</label>
+                  <config>
+                    <type>input</type>
+                    <size>3</size>
+                    <max>3</max>
+                    <eval>int,nospace</eval>
+                    <checkbox>0</checkbox>                  
+                  </config>
+                </TCEforms>
+              </slices>
+              <boxCols>
+                <TCEforms>
+             	  <displayCond>FIELD:sliderStyle:=:7</displayCond>
+                  <exclude>1</exclude>
+                  <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.boxCols</label>
+                  <config>
+                    <type>input</type>
+                    <size>3</size>
+                    <max>3</max>
+                    <eval>int,nospace</eval>
+                    <checkbox>0</checkbox>                  
+                  </config>
+                </TCEforms>
+              </boxCols>
+              <boxRows>
+                <TCEforms>
+             	  <displayCond>FIELD:sliderStyle:=:7</displayCond>
+                  <exclude>1</exclude>
+                  <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.boxRows</label>
+                  <config>
+                    <type>input</type>
+                    <size>3</size>
+                    <max>3</max>
+                    <eval>int,nospace</eval>
+                    <checkbox>0</checkbox>                  
+                  </config>
+                </TCEforms>
+              </boxRows>
+              <animSpeed>
+                <TCEforms>
+             	  <displayCond>FIELD:sliderStyle:=:7</displayCond>
+                  <exclude>1</exclude>
+                  <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.animSpeed</label>
+                  <config>
+                    <type>input</type>
+                    <size>3</size>
+                    <max>5</max>
+                    <eval>int,nospace</eval>
+                    <checkbox>0</checkbox>                  
+                  </config>
+                </TCEforms>
+              </animSpeed>
+              <pauseTime>
+                <TCEforms>
+             	  <displayCond>FIELD:sliderStyle:=:7</displayCond>
+                  <exclude>1</exclude>
+                  <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.pauseTime</label>
+                  <config>
+                    <type>input</type>
+                    <size>3</size>
+                    <max>5</max>
+                    <eval>int,nospace</eval>
+                    <checkbox>0</checkbox>                  
+                  </config>
+                </TCEforms>
+              </pauseTime>
+              <manualAdvance>
+                <TCEforms>
+             	  <displayCond>FIELD:sliderStyle:=:7</displayCond>
+                  <exclude>1</exclude>
+                  <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.manualAdvance</label>
+                  <config>
+                    <type>check</type>
+                    <default>0</default>
+                  </config>
+                </TCEforms>
+              </manualAdvance>
+    					<pauseNivo>
+    						<TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:7</displayCond>
+          			  <exclude>1</exclude>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.pause</label>
+    							<config>
+    								<type>select</type>
+    								<size>1</size>
+    								<maxitems>1</maxitems>
+    								<items type="array">
+    									<numIndex index="0" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.pause.I.0</numIndex>
+    										<numIndex index="1">0</numIndex>
+    									</numIndex>
+    									<numIndex index="1" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.pause.I.1</numIndex>
+    										<numIndex index="1">1</numIndex>
+    									</numIndex>
+    									<numIndex index="2" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.pause.I.2</numIndex>
+    										<numIndex index="1">2</numIndex>
+    									</numIndex>
+    								</items>
+    							</config>
+    						</TCEforms>
+    					</pauseNivo>
+              <directionNav>
+                <TCEforms>
+             	  <displayCond>FIELD:sliderStyle:=:7</displayCond>
+                  <exclude>1</exclude>
+                  <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.directionNav</label>
+                  <config>
+                    <type>check</type>
+                    <default>1</default>
+                  </config>
+                </TCEforms>
+              </directionNav>
+    					<controlNav>
+    						<TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:7</displayCond>
+          			  <exclude>1</exclude>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.controlNav</label>
+    							<config>
+    								<type>select</type>
+    								<size>1</size>
+    								<maxitems>1</maxitems>
+    								<items type="array">
+    									<numIndex index="0" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.controlNav.I.0</numIndex>
+    										<numIndex index="1">0</numIndex>
+    									</numIndex>
+    									<numIndex index="1" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.controlNav.I.1</numIndex>
+    										<numIndex index="1">1</numIndex>
+    									</numIndex>
+    									<numIndex index="2" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.controlNav.I.2</numIndex>
+    										<numIndex index="1">2</numIndex>
+    									</numIndex>
+    								</items>
+    							</config>
+    						</TCEforms>
+    					</controlNav>
+    					<imageLink>
+    						<TCEforms>
+       			     <exclude>1</exclude>
+    							<displayCond>FIELD:sliderStyle:=:,1,2,3,4,5,6,7,8</displayCond>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.imageLink</label>
+    							<config>
+    								<type>check</type>
+    								<default>0</default>
+    							</config>
+    						</TCEforms>
+    					</imageLink>
+    					<css3>
+    						<TCEforms>
+       			     <exclude>1</exclude>
+    							<displayCond>FIELD:sliderStyle:=:,1,2,3,4,5,6,7,8</displayCond>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.css3</label>
+    							<config>
+    								<type>check</type>
+    								<default>1</default>
+    							</config>
+    						</TCEforms>
+    					</css3> 
+    					<verticalNav>
+    						<TCEforms>
+       			     <exclude>1</exclude>
+                  <displayCond>FIELD:sliderStyle:=:,1,4</displayCond>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.verticalNav</label>
+    							<config>
+    								<type>check</type>
+    								<default>0</default>
+    							</config>
+    						</TCEforms>
+    					</verticalNav>
+    					<pagination>
+    						<TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:,1,2,3,4,5,6,8</displayCond>
+          			  <exclude>1</exclude>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.pagination</label>
+    							<config>
+    								<type>select</type>
+    								<size>1</size>
+    								<maxitems>1</maxitems>
+    								<items type="array">
+    									<numIndex index="0" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.pagination.I.0</numIndex>
+    										<numIndex index="1">0</numIndex>
+    									</numIndex>
+    									<numIndex index="1" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.pagination.I.1</numIndex>
+    										<numIndex index="1">1</numIndex>
+    									</numIndex>
+    									<numIndex index="2" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.pagination.I.2</numIndex>
+    										<numIndex index="1">2</numIndex>
+    									</numIndex>
+    								</items>
+    							</config>
+    						</TCEforms>
+    					</pagination>
+    					<progressbar>
+    						<TCEforms>
+       			     <exclude>1</exclude>
+    							<displayCond>FIELD:sliderStyle:=:,1,2,3,4,5,6,7,8</displayCond>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.progressbar</label>
+    							<config>
+    								<type>check</type>
+    								<default>0</default>
+    							</config>
+    						</TCEforms>
+    					</progressbar> 
+              <textareaWidth>
+                <TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:,1,2,3,4,5,8</displayCond>
+          			     <exclude>1</exclude>
+                     <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.textareaWidth</label>
+                     <config>
+                        <type>input</type>
+                        <size>3</size>
+                        <max>3</max>
+                        <eval>int,nospace</eval>
+                        <checkbox></checkbox>
+                     </config>
+                  </TCEforms>
+              </textareaWidth> 
+              <textareaOffsetBottom>
+                <TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:,1,4,5</displayCond>
+          			     <exclude>1</exclude>
+                     <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.textareaOffsetBottom</label>
+                     <config>
+                        <type>input</type>
+                        <size>3</size>
+                        <max>3</max>
+                        <eval>int,nospace</eval>
+                        <checkbox></checkbox>
+                     </config>
+                  </TCEforms>
+              </textareaOffsetBottom> 
+              <textareaOffsetTop>
+                <TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:2,3,6,8</displayCond>
+          			     <exclude>1</exclude>
+                     <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.textareaOffsetTop</label>
+                     <config>
+                        <type>input</type>
+                        <size>3</size>
+                        <max>3</max>
+                        <eval>int,nospace</eval>
+                        <checkbox></checkbox>
+                     </config>
+                  </TCEforms>
+              </textareaOffsetTop> 
+              <textareaOffsetLeft>
+                <TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:,1,2,3,4,5,8</displayCond>
+          			     <exclude>1</exclude>
+                     <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.textareaOffsetLeft</label>
+                     <config>
+                        <type>input</type>
+                        <size>3</size>
+                        <max>3</max>
+                        <eval>int,nospace</eval>
+                        <checkbox></checkbox>
+                     </config>
+                  </TCEforms>
+              </textareaOffsetLeft> 
+    					<textareaBg>
+    						<TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:,1,2,3,4,5,8</displayCond>
+                  <exclude>1</exclude>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.textareaBg</label>
+    							<config>
+    								<type>select</type>
+    								<size>1</size>
+    								<maxitems>1</maxitems>
+   								<items type="array">
+    									<numIndex index="0" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.textareaBg.I.0</numIndex>
+    										<numIndex index="1">0</numIndex>
+    									</numIndex>
+    									<numIndex index="1" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.textareaBg.I.1</numIndex>
+    										<numIndex index="1">white</numIndex>
+    									</numIndex>
+    									<numIndex index="2" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.textareaBg.I.2</numIndex>
+    										<numIndex index="1">nobg</numIndex>
+    									</numIndex>
+   								</items>
+    							</config>
+    						</TCEforms>
+    					</textareaBg> 
+              <fontSize>
+                <TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:,1,2,3,4,5,6,7,8</displayCond>
+          			     <exclude>1</exclude>
+                     <label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.fontSize</label>
+                     <config>
+                        <type>input</type>
+                        <size>3</size>
+                        <max>3</max>
+                        <eval>int,nospace</eval>
+                        <checkbox></checkbox>
+                     </config>
+                  </TCEforms>
+              </fontSize> 
+    					<fontUnit>
+    						<TCEforms>
+    							<displayCond>FIELD:sliderStyle:=:,1,2,3,4,5,6,7,8</displayCond>
+                  <exclude>1</exclude>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.fontUnit</label>
+    							<config>
+    								<type>select</type>
+    								<size>1</size>
+    								<maxitems>1</maxitems>
+   								<items type="array">
+    									<numIndex index="0" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.fontUnit.I.0</numIndex>
+    										<numIndex index="1">0</numIndex>
+    									</numIndex>
+    									<numIndex index="1" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.fontUnit.I.1</numIndex>
+    										<numIndex index="1">px</numIndex>
+    									</numIndex>
+    									<numIndex index="2" type="array">
+    										<numIndex index="0">LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.fontUnit.I.2</numIndex>
+    										<numIndex index="1">em</numIndex>
+    									</numIndex>
+   								</items>
+    							</config>
+    						</TCEforms>
+    					</fontUnit>
+    					<cssFile>
+    						<TCEforms>
+                  <exclude>1</exclude>
+    						  <displayCond>FIELD:sliderStyle:=:,1,2,3,4,5,6,7,8</displayCond>
+    							<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.cssFile</label>
+    							<config>
+        						<type>input</type>
+        						<eval>trim</eval>
+        						<wizards type="array">
+        							<_PADDING>2</_PADDING>
+        							<link type="array">
+        								<type>popup</type>
+        								<title>Link</title>
+        								<icon>link_popup.gif</icon>
+        								<script>browse_links.php?mode=wizard&amp;act=file</script>
+        								<params type="array">
+        									<blindLinkOptions>page,url,mail,spec,folder</blindLinkOptions>
+								          <allowedExtensions>css</allowedExtensions>
+                				</params>
+        								<JSopenParams>height=300,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
+        							</link>
+        						</wizards>
+    							</config>
+    						</TCEforms>
+    					</cssFile>
+        			<myAfterLoadJS>
+        				<TCEforms>
+        					<displayCond>FIELD:sliderStyle:=:7</displayCond>
+        					<exclude>1</exclude>
+        					<label>LLL:EXT:t3s_jslidernews/locallang_db.xml:pi_flexform.myAfterLoadJS</label>
+        					<config>
+        						<type>text</type>
+        						<cols>80</cols>
+        						<rows>10</rows>
+        					</config>
+        				</TCEforms>
+        			</myAfterLoadJS>    					
+            </el>
+         </ROOT>
+      </tab2>
+   </sheets>
+</T3DataStructure>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_t3sjslidernews_pi1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="readmore"> read more</label>
+			<label index="emailTo">Send an email to</label>
+			<label index="linkCount">The number of content elements is not equal to the number of "default links".</label>
+			<label index="category">Category</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="readmore"> weiterlesen</label>
+			<label index="emailTo">Senden Sie eine eMail an</label>
+			<label index="linkCount">Die Anzahl der Contentelemente ist nicht gleich der Anzahl der "Standard-Links".</label>
+			<label index="category">Kategorie</label>
+		</languageKey>
+    <languageKey index="pl" type="array">
+			<label index="readmore"> czytaj dalej</label>
+			<label index="emailTo">Wyślij email do</label>
+			<label index="linkCount">Ilość elementów z treścią nie jest równy ilości "standardowych linków".</label>
+			<label index="category">Category</label>
+		</languageKey>
+	</data>
+</T3locallang>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <type>module</type>
+        <description>Language labels for extension 't3s_jslidernews'</description>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="pi1_title">News &amp; Content Slider</label>
+            <label index="pi1_plus_wiz_description">jQuery Slider for tt_news and tt_content (CType:text, textpic, media, html) with various styles and effects.</label>
+
+            <label index="jquery">jQuery Settings:</label>
+            <label index="overlay">Colorbox Overlay (tt_news, tt_content):</label>
+            <label index="text">Text Settings:</label>
+            <label index="link">Link Settings:</label>
+            <label index="dim">Dimensions Settings:</label>
+            <label index="video-image">Video Images:</label>
+            <label index="marker">Settings for own Markers:</label>
+            <label index="tt-news">If using tt_news:</label>
+        </languageKey>
+        <languageKey index="de" type="array">
+            <label index="pi1_title">News &amp; Content Slider</label>
+        </languageKey>
+        <languageKey index="pl" type="array">
+            <label index="pi1_title">News &amp; Content Slider</label>
+        </languageKey>
+    </data>
+</T3locallang>

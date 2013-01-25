@@ -1,0 +1,1 @@
+script=res/js/jslidernews.js

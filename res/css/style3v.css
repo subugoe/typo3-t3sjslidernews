@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+.lof-slider_3 .lof-wrapper {position:relative; overflow:hidden;}
+.lof-slider_3 .preload {background:#FFF; position:absolute; z-index:5; top:0; right:0;}
+.lof-slider_3 .preload div {background:transparent url('../images/load-indicator.gif') no-repeat scroll 50% 50%;}
+/*
+.lof-slider_3 .lof-main-outer {position:absolute; overflow:hidden; top:0; right:0;}
+*/
+ .lof-slider_3 .lof-main-outer {position:relative; overflow:hidden;}
+/* main flash */
+.lof-slider_3 .lof-main-wapper {
+	padding:0;
+	margin:0;
+	position:absolute;
+}
+.lof-slider_3 .lof-main-wapper .lof-item {
+	padding:0;
+	margin:0;
+	float:left;
+	position:relative;
+	overflow:hidden;
+}
+.lof-slider_3 .lof-opacity  .lof-item {
+	top:0;
+	left:0;
+	float:inherit;
+	position:absolute;
+}
+.lof-slider_3 .lof-main-wapper .lof-item img {
+	padding:0;	
+  margin:0;
+  border:none;	
+}
+
+/* description */
+.lof-slider_3 .lof-description {position:absolute; padding:10px; height:100%;}
+.lof-slider_3 .lof-description p {margin:0;	padding:0}
+.lof-slider_3 .lof-description_black {background:url('../images/bg_trans.png');}
+.lof-slider_3 .lof-description_white {background:url('../images/transparent_bg_white.png');}
+.lof-slider_3 .lof-description_nobg {background:none;}
+.lof-slider_3 .lof-description_black, .lof-slider_3 .lof-description_black a, .lof-slider_3 .lof-description_black a:visited {color:#FFF; text-decoration:none;}
+.lof-slider_3 .lof-description_white, .lof-slider_3 .lof-description_white a, .lof-slider_3 .lof-description_white a:visited {color:#000; text-decoration:none;}
+.lof-slider_3 .lof-description_nobg, .lof-slider_3 .lof-description_nobg a, .lof-slider_3 .lof-description_nobg a:visited {color:#000; text-decoration:none;}
+.lof-slider_3 .lof-description_black a:hover, .lof-slider_3 .lof-description_white a:hover, .lof-slider_3 .lof-description_nobg a:hover {color:red; text-decoration:none;}
+.lof-slider_3 .lof-description_black h3, .lof-slider_3 .lof-description_white h3, .lof-slider_3 .lof-description_nobg h3 {margin:0px;padding:10px 0 5px 0; }
+.lof-slider_3 .lof-description_black h3, .lof-slider_3 .lof-description_black h3 a, .lof-slider_3 .lof-description_black h3 a:visited {color:#DDD; text-decoration:none;}
+.lof-slider_3 .lof-description_white h3, .lof-slider_3 .lof-description_white h3 a, .lof-slider_3 .lof-description_white h3 a:visited {color:#444; text-decoration:none;}
+.lof-slider_3 .lof-description_nobg h3, .lof-slider_3 .lof-description_nobg h3 a, .lof-slider_3 .lof-description_nobg h3 a:visited {color:#444; text-decoration:none;}
+.lof-slider_3 .lof-description_black h3 a:hover, .lof-slider_3 .lof-description_white h3 a:hover, .lof-slider_3 .lof-description_nobg h3 a:hover {color:red; text-decoration:none;}
+
+/* CSS3 Style */
+.lof-slider_3 .lof-css3 {	
+  -moz-box-shadow:0 0 10px #333; 
+  -webkit-box-shadow:0 0 10px #333; 
+  box-shadow: 0 0 10px #333; 
+}
+.lof-slider_3 .lof-css3 .lof-navigator-wapper {
+	-moz-box-shadow:0 0 8px #CCC;
+	-webkit-box-shadow:0 0 8px #CCC;
+  box-shadow: 0 0 8px #333;
+}
+.lof-slider_3 .lof-css3 .lof-description, .lof-slider_3 .lof-css3 .lof-description_black, .lof-slider_3 .lof-css3 .lof-description_white {
+	-moz-box-shadow:0 0 3px #333;
+	-webkit-box-shadow:0 0 3px #333;
+  box-shadow: 0 0 3px #333;
+}
+
+/* ICONS etc. */
+.lof-slider_3 .author_icon {
+  background: url('../icons/icon_author.png') 0 0 no-repeat;
+  font-size: 80%;
+  padding:0 0 0 20px;
+  margin:0 10px 0 0;
+  line-height:4em;
+}
+.lof-slider_3 .date_icon {
+  background: url('../icons/icon_calendar.png') 0 0 no-repeat;
+  font-size: 80%;
+  padding:0 0 0 20px;
+  margin:0 10px 0 0;
+  line-height:4em;
+}
+.lof-slider_3 .category_icon {
+  background: url('../icons/icon_category.png') 0 0 no-repeat;
+  font-size: 80%;
+  padding:0 0 0 22px;
+  margin:0 10px 0 0;
+  line-height:4em;
+}
+.lof-slider_3 .author, .lof-slider_3 .category, .lof-slider_3 .date {margin:0 7px 0 0;  font-size: 80%;}
+
+/*******************************************************/
+
+/* item navigator */
+.lof-slider_3 .lof-navigator-outer {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:4;
+	overflow:hidden;
+}
+.lof-slider_3 .lof-navigator {
+	top:0;
+	padding:0;
+	margin:0;
+	position:absolute;
+	color:#FFF;
+  width: 100%;
+}
+.lof-slider_3 .lof-navigator h3 {padding-top:10px;}
+.lof-slider_3 .lof-navigator h3, .lof-slider_3 .lof-navigator h3 a, .lof-slider_3 .lof-navigator h3 a:visited {color:#DDD;}
+.lof-slider_3 .lof-navigator h3 a:hover {color:red; text-decoration:none;}
+
+.lof-slider_3 .lof-navigator li {
+  cursor: pointer;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+.lof-slider_3 .lof-navigator li div {
+  background: url('../images/transparent_bg.png') repeat scroll 0 0 transparent;
+  border-top: 1px solid #E1E1E1;
+  height: 100%;   
+  margin-right: 0;
+  position: relative;
+
+}
+.lof-slider_3 .lof-navigator li img {
+	border:#666 solid 1px;
+  float: right;
+  padding: 3px; 	
+}
+ 
+/* ActNavigator background-color */
+.lof-slider_3 .green li.active {background:url('../images/grad-bg.gif');} 
+.lof-slider_3 .green li.active div {background:url('../images/arrow-variant.png') no-repeat scroll right center;} 
+.lof-slider_3 .green li.active img, .lof-slider_3 .green li:hover img {border:#A8A8A8 solid 1px;}
+
+.lof-slider_3 .darkred li.active {background:url('../images/grad-bg2.gif');} 
+.lof-slider_3 .darkred li.active div {background:url('../images/arrow-variant.png') no-repeat scroll right center;} 
+.lof-slider_3 .darkred li.active img, .lof-slider_3 .darkred li:hover img {border:#C5C5C5  solid 1px;}
+
+.lof-slider_3 .black li.active {background:url('../images/grad-bg-black.gif');} 
+.lof-slider_3 .black li.active div {background:url('../images/arrow-variant.png') no-repeat scroll right center;} 
+.lof-slider_3 .black li.active img, .lof-slider_3 .black li:hover img {border:#C5C5C5  solid 1px;}
+
+.lof-slider_3 .red li.active {background:url('../images/grad-bg-red.gif');} 
+.lof-slider_3 .red li.active div {background:url('../images/arrow-variant.png') no-repeat scroll right center;} 
+.lof-slider_3 .red li.active img, .lof-slider_3 .red li:hover img {border:#C5C5C5  solid 1px;}
+
+.lof-slider_3 .orange li.active {background:url('../images/grad-bg-orange.gif');} 
+.lof-slider_3 .orange li.active div {background:url('../images/arrow-variant.png') no-repeat scroll right center;} 
+.lof-slider_3 .orange li.active img, .lof-slider_3 .orange li:hover img {border:#C5C5C5  solid 1px;}
+
+.lof-slider_3 .darkblue li.active {background:url('../images/grad-bg-darkblue.gif');} 
+.lof-slider_3 .darkblue li.active div {background:url('../images/arrow-variant.png') no-repeat scroll right center;} 
+.lof-slider_3 .darkblue li.active img, .lof-slider_3 .darkblue li:hover img {border:#C5C5C5  solid 1px;}
+
+.lof-slider_3 .lightblue li.active {background:url('../images/grad-bg-blue.gif');} 
+.lof-slider_3 .lightblue li.active div {background:url('../images/arrow-variant.png') no-repeat scroll right center;} 
+.lof-slider_3 .lightblue li.active img, .lof-slider_3 .lightblue li:hover img {border:#0059A9  solid 1px;}
+
+/* left navigation */
+.lof-slider_3 .lof-snleft .lof-main-outer {float:right;}
+.lof-slider_3 .lof-snleft .lof-main-wapper {margin-left:auto; margin-right:inherit; clear:both;}
+.lof-slider_3 .lof-snleft .lof-navigator-outer {left:0; top:0; right:inherit;}
+.lof-slider_3 .lof-snleft .lof-navigator li div {margin-left:inherit; margin-right:18px;}
+
+
+/* navigation control */
+.lof-slider_3 .navigationControl {
+margin:10px 0 0 0;
+overflow: hidden;
+}
+.lof-slider_3 .pagSelector {
+  cursor: pointer;
+  background: url('../images/dots.png') no-repeat scroll 0 0 transparent;
+  border: 0 none;
+  display: block;
+  height: 12px;
+  margin-right: 6px;
+  float: left;
+  text-indent: -9999px;   
+  width: 12px;
+}
+.lof-slider_3 .pagSelector.active {
+  background-position: -12px 0;
+}
+
+.lof-slider_3 .button-control {
+    cursor: pointer;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    z-index:10;
+}
+
+.lof-slider_3 .button-control span {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.lof-slider_3 .action-start span {
+  background: transparent url('../images/play.png') scroll no-repeat center center;      
+} 
+.lof-slider_3 .action-stop span {
+ background: transparent url('../images/pause.png') scroll no-repeat center center;    
+}
+
+.lof-slider_3 .progressbar {
+  background: red;
+  height: 2px;
+  width: 0%;
+}
+
+.lof-slider_3 .video-overlay{
+  position: absolute;
+    top:0;
+    left:0;
+    background: url('../images/play_video.png') center center no-repeat;
+    opacity:0.4;
+    filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+.lof-slider_3 .video-overlay:hover{
+  background: url('../images/play_video_on.png') center center no-repeat;
+}
+
+.lof-slider_3 .pagSelectorTitle {
+border-bottom: 1px solid silver;
+padding-left:10px;
+}
+.lof-slider_3 .pagSelectorTitle.active {
+background-color: silver;
+}

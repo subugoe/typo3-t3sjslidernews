@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+  <meta type="array">
+		<type>flex</type>  
+    <description>CSH labels for extension 't3s_jslidernews'</description>
+  </meta>
+  <data type="array">
+    <languagekey index="default" type="array">
+			<!-- General -->
+      <label index="fixedLgd.description">Truncates the text at the end from the entry number (number of characters), provided that contains more characters than the original text (default:120).</label>
+      <label index="pages.description">Sites in the Menu.</label>
+      <label index="contentPages.description">Display entire content from choosen pages.</label>
+      <label index="defaultLink.description">Use this to link to another internal page instead to the content/page.</label>
+      <label index="defaultImage.description">If you have news or content without an image, one of this images will be used.</label>
+      <label index="imageOrder.description">"Images in order" ONLY works if the number of news, content-elements or pages is EQUAL to the number of standard images and news, content-elements or pages have NO images included.</label>
+      <label index="newsLimit.description">Default: 20 news.</label>
+      <label index="overlay.description">If using "Selected" you have to activate "Overlay Selected" in the EXT-Configuration. Don't work with Nivo Slider</label>
+			<!-- Slider -->
+      <label index="variant.description">This require and include the hoverInt jQuery plugin.</label>
+      <label index="sliderWidth.description">Default: 700px.</label>
+      <label index="sliderHeight.description">Default: 300px.</label>
+      <label index="interval.description">Time in milliseconds the animation stopped (default: 4000).</label>
+      <label index="duration.description">Slide transition speed in milliseconds (default: 1200).</label>
+      <label index="navigatorHeight.description">Default: 100px / Range: 40px - 400px.</label>
+      <label index="navigatorWidth.description">Default: 310px / Range: 40px - 1000px.</label>
+      <label index="thumbnailSize.description">Default: 60px / Min: 20px.</label>
+      <label index="proportion.description">Proportion thumbnail to the slidersize(default:10).</label>
+      <label index="textareaWidth.description">Default: 350px  (Style 5 and 7: 100%).</label>
+      <label index="textareaOffsetBottom.description">Default: 50px (Stylee 5 and 7: 0).</label>
+      <label index="textareaOffsetTop.description">Default: 150px.</label>
+      <label index="textareaOffsetLeft.description">Default: 0 (Style-3: 20px).</label>
+      <label index="fontSize.description">Default: 120 for unit %.</label>
+      <label index="imageSixHeight.description">Default: depends on the amount and height of the navigation-items. (unit px)</label>
+      <label index="pagination.description">Some code and some markers are needed in the template - see example in the template!</label>
+			<!-- Nivo Slider -->
+      <label index="effect.description">Specify sets like: 'fold,fade,sliceDown'.</label>
+      <label index="slices.description">Number of slices (default:15).</label>
+      <label index="boxCols.description">Number of columns (default:8).</label>
+      <label index="boxRows.description">Number of rows (default:4).</label>
+      <label index="animSpeed.description">Slide transition speed in milliseconds (default:500).</label>
+      <label index="pauseTime.description">Time in milliseconds the animation stopped (default:3000).</label>
+      <label index="pauseOnHover.description">Stop animation while hovering.</label>
+      <label index="directionNav.description">Indicates the direction of navigation. (Arrows - left / right)</label>
+      <label index="directionNavHide.description">Shows the direction of navigation only on mouseover.</label>
+      <label index="keyboardNav.description">Keyboard Navigation.</label>
+      <label index="captionOpacity.description">Universal caption opacity (default:0.8).</label>
+      <label index="prevTex.description">... if visible by css (default:Prev).</label>
+      <label index="nextTex.description">... if visible by css (default:Next)).</label>
+    </languagekey>
+    <languagekey index="de" type="array">
+			<!-- General -->
+      <label index="fixedLgd.description">Kürzt den Text am Ende mit der eingegebenen Zahl (Anzahl an Zeichen) ab, sofern dieser mehr Zeichen enthält als der orginal Text (Standard:120).</label>
+      <label index="pages.description">Seiten im Menü.</label>
+      <label index="contentPages.description">Gesamten Inhalt von ausgewählten Seiten anzeigen.</label>
+      <label index="defaultLink.description">Verlinkt mit interner Seite anstatt mit dem Inhalt/Seite.</label>
+      <label index="defaultImage.description">Wenn kein Bild vorhanden ist, wird eines dieser Bilder eingefügt.</label>
+      <label index="imageOrder.description">"Bilder in Reihenfolge" funktioniert NUR, wenn die Anzahl der News, Contentelemente oder Seiten GLEICH der Anzahl der Standard-Bilder ist und die News, Contentelemente oder Seiten KEINE Bilder enthalten.</label>
+      <label index="newsLimit.description">Standard: 20 News.</label>
+      <label index="overlay.description">Für "Selektiert" muss "Overlay Selected" in der EXT-CKonfiguration aktiviert werden. Funktioniert nicht mit Nivo Slider:</label>
+			<!-- Slider --> 
+      <label index="variant.description">Das hoverInt jQuery plugin wird benötigt und eingebunden.</label>
+      <label index="sliderWidth.description">Standard: 700px.</label>
+      <label index="sliderHeight.description">Standard: 300px.</label>
+      <label index="interval.description">Zeit in Millisekunden, in der die Animation stoppt (Standard: 4000).</label>
+      <label index="duration.description">Animations-Geschwindigkeit in Millisekunden (Standard: 1200).</label>
+      <label index="navigatorHeight.description">Standard: 100px / Range: 40px - 400px.</label>
+      <label index="navigatorWidth.description">Standard: 310px / Range: 40px - 1000px</label>
+      <label index="thumbnailSize.description">Standard: 60px / Min: 20px.</label>
+      <label index="proportion.description">Proportion Slidergröße zu Thumbnail(Standard: 10).</label>
+      <label index="textareaWidth.description">Standard: 350px (Stil 5 und 7: 100%).</label>
+      <label index="textareaOffsetBottom.description">Standard: 50px (Stil 5 und 7: 0).</label>
+      <label index="textareaOffsetTop.description">Standard: 150px.</label>
+      <label index="textareaOffsetLeft.description">Standard: 0 (Stil-3: 20px).</label>
+      <label index="fontSize.description">Standard: 120 mit Einheit %.</label>
+      <label index="imageSixHeight.description">Standard: Abhängig von der Anzahl und Höhe der Navigations-Elemente (Einheit:Pixel)</label>
+      <label index="pagination.description">Etwas Code und einige Marker werden im Template benötigt - s. Beispiel im Template!</label>
+			<!-- Nivo Slider -->
+      <label index="effect.description">Bestimmt den Animations-Effekt: 'fold,fade,sliceDown'.</label>
+      <label index="slices.description">Anzahl der Slices für die Animation (Standard:15).</label>
+      <label index="boxCols.description">Anzahl der Spalten (Standard:8).</label>
+      <label index="boxRows.description">Anzahl der Reihen (Standard:4).</label>
+      <label index="animSpeed.description">Animations-Geschwindigkeit in Millisekunden (Standard:500).</label>
+      <label index="pauseTime.description">Zeit in Millisekunden, in der die Animation stoppt (Standard:3000).</label>
+      <label index="pauseOnHover.description">Stoppt die Animation bei Mouseover.</label>
+      <label index="manualAdvance.description">Bildwechsel kann manuell erfolgen.</label>
+      <label index="directionNav.description">Zeigt die Richtungsnavigation an. (Pfeile - links/rechts)</label>
+      <label index="directionNavHide.description">Zeigt die Richtungsnavigation nur bei Mouseover an.</label>
+      <label index="keyboardNav.description">Links- &amp; Rechts-Pfeil auf der Tastatur können zum Bilderwechsel benutzt werden.</label>
+      <label index="captionOpacity.description">Transparenz der Bildunterschriften (Standard:0.8)</label>
+      <label index="prevTex.description">... wenn sichtbar durch CSS (Standard:Prev).</label>
+      <label index="nextTex.description">... wenn sichtbar durch CSS (Standard:Next).</label>
+    </languagekey>
+    <languagekey index="pl" type="array">
+			<!-- general -->
+      <label index="fixedlgd.description">skróci tekst na końcu z wpisaną ilością znaków (ilość znaków), w przypadku kiedy tekst zawiera więcej znaków niż oryginalny tekst (standard:120).</label>
+      <label index="pages.description">strony w menu.</label>
+      <label index="contentpages.description">wyświetla całą zawartość wybranych stroń.</label>
+      <label index="defaultlink.description">stworzy link do wewnętzrnej strony zamiast z treścią.</label>
+      <label index="defaultimage.description">jak nie ma zdjęcia, jeden z tych zdjęć zostaje wyświetlony .</label>
+      <label index="imageorder.description">"zdjęcia po kolei" działa tylko, kiedy ilość newsów, elemtów z treścią albo stroń jest równy ilości zdjęć standardowych i newsów, elementów z treścią albo ilości stroń, które nie zawierają zdjęć.</label>
+      <label index="newslimit.description">standard: 20 news.</label>
+      <label index="overlay.description">If using "Selected" you have to activate "Overlay Selected" in the EXT-Configuration. Don't work with Nivo Slider</label>
+			<!-- slider --> 
+      <label index="variant.description">potrzenbny jest wtyczka hoverint jquery plugin, która zostaje włączona.</label>
+      <label index="sliderwidth.description">standard: 700px.</label>
+      <label index="sliderheight.description">standard: 300px.</label>
+      <label index="interval.description">czas w milisekundach, na który animacja się zatrzyma (standard: 4000).</label>
+      <label index="duration.description">prędkość animacji w milisekundach (standard: 1200).</label>
+      <label index="navigatorheight.description">standard: 100px / przedział: 40px - 400px.</label>
+      <label index="navigatorwidth.description">standard: 310px / przedział: 40px - 1000px</label>
+      <label index="thumbnailsize.description">standard: 60px / min: 20px.</label>
+      <label index="proportion.description">proporcja wielkości slidera do thumbnail(standard: 10).</label>
+      <label index="textareawidth.description">standard: 350px (styl 5 und 7: 100%).</label>
+      <label index="textareaoffsetbottom.description">standard: 50px (styl 5 und 7: 0).</label>
+      <label index="textareaoffsettop.description">standard: 150px.</label>
+      <label index="textareaoffsetleft.description">standard: 0 (styl-3: 20px).</label>
+      <label index="fontsize.description">standard: 120 w jednosce %.</label>
+      <label index="imagesixheight.description">standard: zależnie od ilośći i wysokości elementów nawigacji (jednostka:pixel)</label>
+      <label index="pagination.description">potrzebujemy trochę kodu i parę markerów w template - patrz na przykład w template!</label>
+			<!-- nivo slider -->
+      <label index="effect.description">decyduje o zastosowanym efekcie animacji: 'fold,fade,slicedown'.</label>
+      <label index="slices.description">ilość slices dla animacji (standard:15).</label>
+      <label index="boxcols.description">ilość wierszy (standard:8).</label>
+      <label index="boxrows.description">ilość kolumn (standard:4).</label>
+      <label index="animspeed.description">prędkość animacji w milisekundach (standard:500).</label>
+      <label index="pausetime.description">czas w milisekundach, na który animacja się zatrzyma (standard:3000).</label>
+      <label index="pauseonhover.description">zatrzyma animację przy mouseover.</label>
+      <label index="manualadvance.description">zmiana zdjęć następuje manualnie.</label>
+      <label index="directionnav.description">wyświetla kierunkową nawigację. (strzałki - w lewo/w prawo)</label>
+      <label index="directionnavhide.description">wyświetla kierunkową nawigację tylko przy mouseover.</label>
+      <label index="keyboardnav.description">Strzałki klawiatury W lewo &amp; W prawo można używać do przełączania zdjęć.</label>
+      <label index="captionopacity.description">Przezroczystość napisów zdjęć (standard:0.8)</label>
+      <label index="prevtex.description">... jak widoczny poprzez css (standard:prev).</label>
+      <label index="nexttex.description">... jak widoczny poprzez css (standard:next).</label>
+    </languagekey>
+  </data>
+</T3locallang>
