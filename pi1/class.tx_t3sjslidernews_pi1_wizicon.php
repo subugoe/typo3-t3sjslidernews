@@ -21,11 +21,6 @@
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
-/**
- * [CLASS/FUNCTION INDEX of SCRIPT].
- *
- * Hint: use extdeveval to insert/update function index above.
- */
 
 /**
  * Class that adds the wizard icon.
@@ -35,7 +30,7 @@
 class tx_t3sjslidernews_pi1_wizicon
 {
     /**
-     * @var t3lib_l10n_parser_Llxml
+     * @var \TYPO3\CMS\Core\Localization\Parser\LocallangXmlParser
      */
     protected $llxmlParser;
 
@@ -44,18 +39,16 @@ class tx_t3sjslidernews_pi1_wizicon
      *
      * @param array $wizardItems: The wizard items
      *
-     * @return Modified array with wizard items
+     * @return array Modified array with wizard items
      */
     public function proc($wizardItems)
     {
-        global $LANG;
-
         $LL = $this->includeLocalLang();
 
         $wizardItems['plugins_tx_t3sjslidernews_pi1'] = [
-            'icon' => t3lib_extMgm::extRelPath('t3s_jslidernews').'pi1/ce_wiz.gif',
-            'title' => $LANG->getLLL('pi1_title', $LL),
-            'description' => $LANG->getLLL('pi1_plus_wiz_description', $LL),
+            'icon' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('t3s_jslidernews').'pi1/ce_wiz.gif',
+            'title' => $GLOBALS['LANG']->getLLL('pi1_title', $LL),
+            'description' => $GLOBALS['LANG']->getLLL('pi1_plus_wiz_description', $LL),
             'params' => '&defVals[tt_content][CType]=list&defVals[tt_content][list_type]=t3s_jslidernews_pi1',
         ];
 
@@ -65,23 +58,23 @@ class tx_t3sjslidernews_pi1_wizicon
     /**
      * Reads the [extDir]/locallang.xml and returns the $LOCAL_LANG array found in that file.
      *
-     * @return The array with language labels
+     * @return array The array with language labels
      */
     public function includeLocalLang()
     {
-        $llFile = t3lib_extMgm::extPath('t3s_jslidernews').'locallang.xml';
+        $llFile = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('t3s_jslidernews').'locallang.xml';
         $LOCAL_LANG = $this->getLlxmlParser()->getParsedData($llFile, $GLOBALS['LANG']->lang, 'utf-8');
 
         return $LOCAL_LANG;
     }
 
     /**
-     * @return t3lib_l10n_parser_Llxml
+     * @return \TYPO3\CMS\Core\Localization\Parser\LocallangXmlParser
      */
     protected function getLlxmlParser()
     {
         if (!isset($this->llxmlParser)) {
-            $this->llxmlParser = t3lib_div::makeInstance('t3lib_l10n_parser_Llxml');
+            $this->llxmlParser = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Localization\Parser\LocallangXmlParser::class);
         }
 
         return $this->llxmlParser;

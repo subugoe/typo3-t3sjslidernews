@@ -1,0 +1,15 @@
+{
+    "name": "subugoe/t3sjslidernews",
+    "description": "News & Content Slider",
+    "type": "typo3-cms-extension",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Ingo Pfennigstorf",
+            "email": "i.pfennigstorf@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": ["pi1"]
+    }
+}
