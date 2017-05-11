@@ -50,7 +50,7 @@ class tx_t3sjslidernews_pi1_wizicon
 
         $wizardItems['plugins_tx_t3sjslidernews_pi1'] = [
             'icon' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('t3s_jslidernews').'pi1/ce_wiz.gif',
-            'title' => $GLOBALS['LANG']->getLLL('pi1_title', $LL),
+            'title' => $LL['pi1_title'],
             'description' => $GLOBALS['LANG']->getLLL('pi1_plus_wiz_description', $LL),
             'params' => '&defVals[tt_content][CType]=list&defVals[tt_content][list_type]=t3s_jslidernews_pi1',
         ];
