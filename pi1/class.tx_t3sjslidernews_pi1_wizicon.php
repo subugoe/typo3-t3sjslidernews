@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 /***************************************************************
  *  Copyright notice
  *
@@ -41,7 +44,7 @@ class tx_t3sjslidernews_pi1_wizicon
      *
      * @return array Modified array with wizard items
      */
-    public function proc($wizardItems)
+    public function proc(array $wizardItems): array
     {
         $LL = $this->includeLocalLang();
 
@@ -60,12 +63,11 @@ class tx_t3sjslidernews_pi1_wizicon
      *
      * @return array The array with language labels
      */
-    public function includeLocalLang()
+    public function includeLocalLang(): array
     {
         $llFile = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('t3s_jslidernews').'locallang.xml';
-        $LOCAL_LANG = $this->getLlxmlParser()->getParsedData($llFile, $GLOBALS['LANG']->lang, 'utf-8');
 
-        return $LOCAL_LANG;
+        return $this->getLlxmlParser()->getParsedData($llFile, $GLOBALS['LANG']->lang, 'utf-8');
     }
 
     /**

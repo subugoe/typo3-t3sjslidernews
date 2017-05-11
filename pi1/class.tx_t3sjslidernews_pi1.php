@@ -1,4 +1,6 @@
 <?php
+declare(strict_types=1);
+
 /***************************************************************
  *  Copyright notice
  *
@@ -132,7 +134,7 @@ class tx_t3sjslidernews_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
         }
     }
 
-    protected function getSliderNewsRecords()
+    protected function getSliderNewsRecords(): array
     {
         // get tt_news setup & conf
         $_tt_news_setup = $GLOBALS['TSFE']->tmpl->setup['plugin.']['tt_news.'];
@@ -414,6 +416,7 @@ class tx_t3sjslidernews_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
         $templateFile = ($this->conf['topBottomNav'] && $this->conf['sliderStyle'] == 8) ? $this->cObj->getSubpart($templateFile,
             '###SLIDERSTYLE_' . $this->conf['sliderStyle'] . '_TOP###') : $this->cObj->getSubpart($templateFile,
             '###SLIDERSTYLE_' . $this->conf['sliderStyle'] . '###');
+        $subpartContentArray = [];
         // get global marker
         $marks = $this->getGlobalMarker();
         // general link configuration
@@ -453,8 +456,8 @@ class tx_t3sjslidernews_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
             // text-fields conversion
             $record = $this->textConversion($record);
             // image configuration
-            $v = $v ? $v : 0;
-            $randbefore = $randbefore ? $randbefore : 0;
+            $v = isset($v) ? $v : 0;
+            $randbefore = isset($randbefore) ? $randbefore : 0;
             $imageFileConf = list($record, $imageConf, $thumbConf, $randbefore, $v) = $this->imageConf($record, $key,
                 $randbefore, $v);
             $record = $imageFileConf[0];
@@ -594,10 +597,12 @@ class tx_t3sjslidernews_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
         $templateFile = ($this->conf['topBottomNav'] && $this->conf['sliderStyle'] == 8) ? $this->cObj->getSubpart($templateFile,
             '###SLIDERSTYLE_' . $this->conf['sliderStyle'] . '_TOP###') : $this->cObj->getSubpart($templateFile,
             '###SLIDERSTYLE_' . $this->conf['sliderStyle'] . '###');
+        $subpartContentArray = [];
         // get global marker
         $marks = $this->getGlobalMarker();
         // general link configuration
         $linkConf = [];
+        $inlineOverlay = '';
         foreach ($sliderRecords as $key => $record) {
             $record['image'] = $this->conf['onlyDefaultImage'] ? '' : $record['image'];
             // link configuration
@@ -622,8 +627,8 @@ class tx_t3sjslidernews_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
             // text-fields conversion
             $record = $this->textConversion($record);
             // image configuration
-            $v = $v ? $v : 0;
-            $randbefore = $randbefore ? $randbefore : 0;
+            $v = isset($v) ? $v : 0;
+            $randbefore = isset($randbefore) ? $randbefore : 0;
             $imageFileConf = list($record, $imageConf, $thumbConf, $randbefore, $v) = $this->imageConf($record, $key,
                 $randbefore, $v);
             $record = $imageFileConf[0];
@@ -757,6 +762,7 @@ class tx_t3sjslidernews_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
         $linkConf = [];
         $linkConf['ATagParams'] = 'class="readmore"';
         $defaultLinks = \TYPO3\CMS\Core\Utility\GeneralUtility::trimExplode(',', $this->conf['defaultLink']);
+        $subpartContentArray = [];
         foreach ($sliderRecords as $key => $record) {
             // link configuration
             $linkConf['title'] = $record['title'];
@@ -764,8 +770,8 @@ class tx_t3sjslidernews_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
             // text-fields conversion
             $record = $this->textConversion($record);
             // image configuration
-            $v = $v ? $v : 0;
-            $randbefore = $randbefore ? $randbefore : 0;
+            $v = isset($v) ? $v : 0;
+            $randbefore = isset($randbefore) ? $randbefore : 0;
             $imageFileConf = list($record, $imageConf, $thumbConf, $randbefore, $v) = $this->imageConf($record, $key,
                 $randbefore, $v);
             $record = $imageFileConf[0];
@@ -1097,7 +1103,7 @@ class tx_t3sjslidernews_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
                     }
                 }
             } else {
-                $imageConf['file'] = $this->extPath . 'res/icons/typo3_logo.jpg';
+                $imageConf['file'] = $this->extPath . 'Resources/Public/Icons/typo3_logo.jpg';
             }
         }
         $thumbConf['file'] = $imageConf['file'];
@@ -1349,17 +1355,17 @@ class tx_t3sjslidernews_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
         // jQuery easing
         if ($this->extConf['includeJqueryEasing']) {
             if ($this->extConf['moveJsFromFooterToHeader']) {
-                $pagerender->addJsFile($this->extPath . 'res/js/jquery.easing.js', 'text/javascript', true, false, '');
+                $pagerender->addJsFile($this->extPath . 'Resources/Public/Javascriptjquery.easing.js', 'text/javascript', true, false, '');
             } else {
-                $pagerender->addJsFooterFile($this->extPath . 'res/js/jquery.easing.js', 'text/javascript', true, false,
+                $pagerender->addJsFooterFile($this->extPath . 'Resources/Public/Javascriptjquery.easing.js', 'text/javascript', true, false,
                     '');
             }
         }
         // jslidernews
         if ($this->extConf['moveJsFromFooterToHeader']) {
-            $pagerender->addJsFile($this->extPath . 'res/js/jslidernews.js', 'text/javascript', true, false, '');
+            $pagerender->addJsFile($this->extPath . 'Resources/Public/Javascriptjslidernews.js', 'text/javascript', true, false, '');
         } else {
-            $pagerender->addJsFooterFile($this->extPath . 'res/js/jslidernews.js', 'text/javascript', true, false, '');
+            $pagerender->addJsFooterFile($this->extPath . 'Resources/Public/Javascriptjslidernews.js', 'text/javascript', true, false, '');
         }
         // inlineJS setting
         // 2 x 15 image-margin
@@ -1452,12 +1458,12 @@ function makeShort(){ jQuery(this).animate({\'' . $leftRight . '\':-' . $short .
             $inlineJS = $queryNoConflict . '( function(){' . $fire . $options . '});' . $variantCode . '});' . $variantCodeOut;
         }
         // add CSS & inlineJS
-        $cssFile = $this->conf['cssFile'] ? $this->conf['cssFile'] : $this->extPath . 'res/css/style' . $this->conf['sliderStyle'] . '.css';
+        $cssFile = $this->conf['cssFile'] ? $this->conf['cssFile'] : $this->extPath . 'Resources/Public/Css/style' . $this->conf['sliderStyle'] . '.css';
         if ($this->variant) {
-            $cssFile = $this->conf['cssFile'] ? $this->conf['cssFile'] : $this->extPath . 'res/css/style' . $this->conf['sliderStyle'] . 'v.css';
+            $cssFile = $this->conf['cssFile'] ? $this->conf['cssFile'] : $this->extPath . 'Resources/Public/Css/style' . $this->conf['sliderStyle'] . 'v.css';
         }
         if ($this->conf['topBottomNav'] && $this->conf['sliderStyle'] == 8) {
-            $cssFile = $this->conf['cssFile'] ? $this->conf['cssFile'] : $this->extPath . 'res/css/style' . $this->conf['sliderStyle'] . '-top.css';
+            $cssFile = $this->conf['cssFile'] ? $this->conf['cssFile'] : $this->extPath . 'Resources/Public/Css/style' . $this->conf['sliderStyle'] . '-top.css';
         }
         $pagerender->addCssFile($cssFile, $rel = 'stylesheet', $media = 'all', $title = '', $compress = true,
             $forceOnTop = false, $allWrap = '');
@@ -1479,9 +1485,9 @@ function makeShort(){ jQuery(this).animate({\'' . $leftRight . '\':-' . $short .
     {
         // Nivo Slider
         if ($this->extConf['moveJsFromFooterToHeader']) {
-            $pagerender->addJsFile($this->extPath . 'res/js/jquery.nivo.slider.js', 'text/javascript', true, false, '');
+            $pagerender->addJsFile($this->extPath . 'Resources/Public/Javascriptjquery.nivo.slider.js', 'text/javascript', true, false, '');
         } else {
-            $pagerender->addJsFooterFile($this->extPath . 'res/js/jquery.nivo.slider.js', 'text/javascript', true,
+            $pagerender->addJsFooterFile($this->extPath . 'Resources/Public/Javascriptjquery.nivo.slider.js', 'text/javascript', true,
                 false, '');
         }
         $options = '';
@@ -1592,7 +1598,7 @@ function makeShort(){ jQuery(this).animate({\'' . $leftRight . '\':-' . $short .
             }
         }
 
-        $cssFile = $this->conf['cssFile'] ? $this->conf['cssFile'] : $this->extPath . 'res/css/nivo.css';
+        $cssFile = $this->conf['cssFile'] ? $this->conf['cssFile'] : $this->extPath . 'Resources/Public/Css/nivo.css';
 
         $pagerender->addCssFile($cssFile, $rel = 'stylesheet', $media = 'all', $title = '', $compress = true,
             $forceOnTop = false, $allWrap = '');
@@ -1611,10 +1617,10 @@ function makeShort(){ jQuery(this).animate({\'' . $leftRight . '\':-' . $short .
         // jQuery colorbox
         if ($this->extConf['includeColorboxJS'] == 1) {
             if ($this->extConf['moveJsFromFooterToHeader']) {
-                $pagerender->addJsFile($this->extPath . 'res/js/jquery.colorbox.js', 'text/javascript', true, false,
+                $pagerender->addJsFile($this->extPath . 'Resources/Public/Javascriptjquery.colorbox.js', 'text/javascript', true, false,
                     '');
             } else {
-                $pagerender->addJsFooterFile($this->extPath . 'res/js/jquery.colorbox.js', 'text/javascript', true,
+                $pagerender->addJsFooterFile($this->extPath . 'Resources/Public/Javascriptjquery.colorbox.js', 'text/javascript', true,
                     false, '');
             }
         }
@@ -1646,7 +1652,7 @@ function makeShort(){ jQuery(this).animate({\'' . $leftRight . '\':-' . $short .
       });';
         }
         if ($this->extConf['includeColorboxCSS']) {
-            $pagerender->addCssFile($this->extPath . 'res/css/colorbox.css', $rel = 'stylesheet', $media = 'all',
+            $pagerender->addCssFile($this->extPath . 'Resources/Public/Css/colorbox.css', $rel = 'stylesheet', $media = 'all',
                 $title = '', $compress = true, $forceOnTop = false, $allWrap = '');
         }
         if ($this->extConf['includeInlineJS']) {
